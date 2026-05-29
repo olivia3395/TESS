@@ -1,200 +1,115 @@
-
 <div align="center">
 
-<!-- ======================= -->
-<!--        HERO BADGES      -->
-<!-- ======================= -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tess_logo_dark.png">
+  <img alt="TESS" src="assets/tess_logo_light.png" height="80">
+</picture>
+
+<h1>TESS</h1>
+<h3>From Text to Forecasts: Bridging Modality Gap with<br/>Temporal Evolution Semantic Space</h3>
+
+<p><img src="https://img.shields.io/badge/🎙️_ICML_2026-Oral_Presentation-FF0000?style=for-the-badge" /></p>
 
 <p>
-  <img src="https://img.shields.io/badge/ICML-2026-Oral-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-2E8B57?style=for-the-badge" />
+  <a href="https://arxiv.org"><img src="https://img.shields.io/badge/ICML%202026-Oral%20Paper-FF0000?style=flat-square&logo=googledocs&logoColor=white" /></a>
+  &nbsp;
+  <a href="https://github.com/olivia3395/TESS"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" /></a>
+  &nbsp;
+  <a href="#"><img src="https://img.shields.io/badge/Poster-PDF-FF6B35?style=flat-square&logo=adobeacrobatreader&logoColor=white" /></a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" />
 </p>
+
+<p>
+<b>Lehui Li*</b> &nbsp;·&nbsp; <b>Yuyao Wang*</b> &nbsp;·&nbsp; <b>Jisheng Yan*</b> &nbsp;·&nbsp; Wei Zhang &nbsp;·&nbsp; Jinliang Deng† &nbsp;·&nbsp; Haoliang Sun &nbsp;·&nbsp; Zhongyi Han &nbsp;·&nbsp; Yongshun Gong†
+</p>
+
+<p><sub>Shandong University &nbsp;·&nbsp; Boston University &nbsp;·&nbsp; Beihang University</sub></p>
 
 <br/>
 
-<h1>
-  TESS
-</h1>
-
-<h3>
-  From Text to Forecasts: Bridging Modality Gap with Temporal Evolution Semantic Space
-</h3>
-
-<p>
-  <b>ICML 2026 Oral</b> &nbsp;·&nbsp;
-  Text-Augmented Time-Series Forecasting &nbsp;·&nbsp;
-  Temporal Semantic Primitives
-</p>
-
-<br/>
-
-<p>
-  Lehui Li<sup>*</sup> · Yuyao Wang<sup>*</sup> · Jisheng Yan<sup>*</sup> · Wei Zhang · 
-  Jinliang Deng<sup>†</sup> · Haoliang Sun · Zhongyi Han · Yongshun Gong<sup>†</sup>
-</p>
-
-<p>
-  <sup>*</sup> Equal contribution &nbsp;&nbsp; 
-  <sup>†</sup> Corresponding authors
-</p>
-
-<br/>
-
-<p>
-  <a href="https://arxiv.org">
-    <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" />
-  </a>
-  <a href="https://github.com/olivia3395/TESS">
-    <img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Poster-PDF-F28C28?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
-  </a>
-</p>
+> *"Instead of forcing models to read between the lines,<br/>we rewrite the lines into a language models already speak."*
 
 </div>
-
-<br/>
 
 ---
 
-## ✨ Overview
+## 📌 What is TESS?
 
-Real-world time series are rarely shaped by numbers alone.  
-News, weather shocks, policy changes, market sentiment, and social events often trigger abrupt temporal shifts that are first expressed in **text** before they appear in historical observations.
-
-Yet directly feeding raw text into forecasting models is unreliable: textual descriptions are qualitative, noisy, and often semantically redundant, while forecasting models require explicit, quantitative temporal signals.
-
-**TESS** introduces a **Temporal Evolution Semantic Space** as an interpretable bridge between language and forecasting. Instead of using raw text as an opaque auxiliary modality, TESS asks a frozen LLM to extract compact temporal primitives — such as distribution shift, volatility, shape, and lag — and injects them into a forecasting backbone through confidence-aware semantic prefix tokens.
+Real-world time series are constantly disrupted by external events — breaking news, weather shocks, policy announcements, market sentiment. These events leave traces in text *long before* they appear in numbers. Yet existing multimodal forecasters fail to harness this: they feed raw text embeddings directly into numerical models, creating a fundamental **modality gap**.
 
 <br/>
 
 <div align="center">
+<table>
+<tr>
+<td align="center" width="33%">
 
-| What makes text hard for forecasting? | How TESS addresses it |
-|:---|:---|
-| Text is qualitative, but forecasting is quantitative | Converts text into numerically grounded temporal primitives |
-| Raw tokens contain redundant or irrelevant descriptions | Distills text into compact semantic signals |
-| LLM outputs may be noisy or uncertain | Uses confidence-aware gating to suppress unreliable primitives |
-| Direct multimodal fusion can destabilize training | Injects semantic prefix tokens into the Transformer backbone |
+**❌ The Problem**<br/><br/>
+Models over-attend to redundant tokens.<br/>
+Qualitative language resists numerical decoding.<br/>
+Direct fusion causes unstable, noisy training.
 
+</td>
+<td align="center" width="5%">→</td>
+<td align="center" width="33%">
+
+**💡 Our Insight**<br/><br/>
+Don't fuse raw text — *translate* it first.<br/>
+Extract structured temporal signals that<br/>forecasters can actually reason over.
+
+</td>
+<td align="center" width="5%">→</td>
+<td align="center" width="33%">
+
+**✅ TESS**<br/><br/>
+An LLM distills text into 4 temporal primitives.<br/>
+A gating network filters noisy extractions.<br/>
+Primitives condition forecasting as prefix tokens.
+
+</td>
+</tr>
+</table>
 </div>
-
-<br/>
-
----
-
-## 🧠 Core Idea
-
-TESS treats text not as a sequence of tokens to be blindly fused, but as a source of **structured temporal hypotheses**.
-
-<div align="center">
-
-```text
-Textual Event Description
-          │
-          ▼
-Frozen LLM Extractor
-          │
-          ▼
-Temporal Semantic Primitives
-  ┌────────────┬────────────┬────────────┬────────────┐
-  │   Shift    │ Volatility │   Shape    │    Lag     │
-  └────────────┴────────────┴────────────┴────────────┘
-          │
-          ▼
-Confidence-Aware Gating
-          │
-          ▼
-Semantic Prefix Tokens
-          │
-          ▼
-PatchTST Forecasting Backbone
-````
-
-</div>
-
-<br/>
 
 ---
 
 ## 🏗️ Method
 
 <div align="center">
-  <img src="assets/tess_overview.png" width="92%" alt="TESS Overview"/>
+<img src="assets/tess_overview.png" width="88%" alt="TESS Overview"/>
+<br/><br/>
+<sub>An LLM extracts temporal primitives via structured prompting · Confidence-aware gating filters unreliable signals · Primitives condition a PatchTST forecaster as semantic prefix tokens</sub>
 </div>
 
 <br/>
 
-TESS follows a three-stage pipeline.
+TESS operates in three stages:
 
-### 1. Temporal Evolution Semantic Space
+**① Build the Semantic Space** &nbsp;—&nbsp; We define four *Temporal Semantic Primitives* (TSPs) that describe how a time series evolves. Each primitive is numerically verifiable from the actual forecast window, enabling reliable training supervision.
 
-We define four **Temporal Semantic Primitives** that describe how an external event may affect the future trajectory of a time series.
+<br/>
 
 <div align="center">
 
-| Primitive              | Meaning                                                    | Forecasting Role                                  |
-| :--------------------- | :--------------------------------------------------------- | :------------------------------------------------ |
-| **Distribution Shift** | Whether the future level changes after the event           | Captures upward/downward regime changes           |
-| **Volatility**         | Whether uncertainty or fluctuation increases               | Captures instability after external shocks        |
-| **Shape**              | Whether the trajectory follows a specific temporal pattern | Captures trend, spike, drop, or recovery behavior |
-| **Lag**                | Whether the event impact is delayed                        | Captures temporal response delay                  |
-
-</div>
-
-These primitives are designed to be both **language-extractable** and **numerically verifiable** from the forecast window, enabling supervised learning of semantic reliability.
-
----
-
-### 2. Text-to-Primitive Extraction
-
-A frozen LLM maps each textual description into primitive labels using structured prompting.
-To reduce the effect of unreliable LLM predictions, TESS estimates extraction confidence from the log-probability margin between the top candidate and the runner-up candidate.
-
-The confidence-aware gate softly weights each primitive, allowing the model to preserve reliable semantic signals while suppressing noisy ones.
-
----
-
-### 3. Primitive-Conditioned Forecasting
-
-The gated primitive embeddings are prepended to the time-series patch embeddings as **semantic prefix tokens**.
-This lets semantic information interact with temporal representations throughout all Transformer layers.
-
-The model is trained end-to-end with a joint objective combining:
-
-* forecasting loss,
-* primitive supervision,
-* confidence-aware gating supervision.
-
-The LLM remains frozen during training.
-
-<br/>
-
----
-
-## 📊 Results
-
-Across four real-world datasets, TESS consistently improves text-augmented forecasting performance over both unimodal and multimodal baselines.
-
-<div align="center">
-
-| Setting              | Key Observation                                                          |
-| :------------------- | :----------------------------------------------------------------------- |
-| Unimodal forecasting | Historical signals alone miss event-driven shifts                        |
-| Direct text fusion   | Models often over-attend to redundant tokens                             |
-| TESS                 | Structured primitives provide stable and interpretable semantic guidance |
-| Ablation studies     | Removing gating or primitive bottlenecks degrades performance            |
+| Primitive | What It Captures | Labels |
+|:---:|:---|:---|
+| 📈 **Distribution Shift** | Mean level change between history and forecast | `STRONG-RISE` `MILD-RISE` `STABLE` `MILD-DROP` `STRONG-DROP` |
+| 〰️ **Volatility Shift** | Change in variance / fluctuation intensity | `STRONG-RISE` `MILD-RISE` `STABLE` `MILD-DROP` `STRONG-DROP` |
+| 🔀 **Shape** | Overall morphology of the forecast trajectory | `ASCEND` `DESCEND` `PEAK` `TROUGH` `OSCILLATE` |
+| ⏱️ **Lag & Decay** | When the event impact begins and how long it lasts | `EARLY-FADE` `EARLY-PERSIST` `MID-FADE` `MID-PERSIST` `LATE` `DIFFUSE` |
 
 </div>
 
 <br/>
 
-> TESS achieves up to **29% reduction in forecasting error** compared with strong unimodal and multimodal baselines.
+**② Text → Primitives** &nbsp;—&nbsp; A frozen LLM classifies each primitive from input text under a structured prompt. A **confidence-aware gating network** estimates extraction reliability from the LLM's own probability margin, softly suppressing unreliable primitives at inference time.
 
-<br/>
+**③ Primitives → Forecast** &nbsp;—&nbsp; Gated primitive embeddings are prepended as **semantic prefix tokens** alongside patch embeddings inside a Transformer. Semantic signals participate in every attention layer. The full model trains end-to-end with a joint forecasting + gating loss (LLM frozen).
 
 ---
 
@@ -203,85 +118,91 @@ Across four real-world datasets, TESS consistently improves text-augmented forec
 ### Installation
 
 ```bash
-git clone https://github.com/olivia3395/TESS.git
-cd TESS
+git clone https://github.com/olivia3395/TESS.git && cd TESS
 
-conda create -n tess python=3.8
-conda activate tess
-
+pip install torch>=2.0.0 transformers accelerate
+pip install numpy pandas scikit-learn einops
 pip install -r requirements.txt
 ```
 
-### Data Preparation
+### Offline Primitive Extraction
 
-Place datasets under:
-
-```text
-./dataset/
-```
-
-Expected structure:
-
-```text
-dataset/
-├── dataset_name/
-│   ├── train.csv
-│   ├── val.csv
-│   ├── test.csv
-│   └── text/
-```
-
-### Run Training
+Primitive extraction is a one-time preprocessing step — the forecaster consumes only compact labels at training/inference time.
 
 ```bash
-python run.py \
-  --model TESS \
-  --data ETTh1 \
-  --seq_len 96 \
-  --pred_len 96 \
-  --patch_len 16 \
-  --stride 8 \
-  --d_model 128 \
-  --n_heads 8 \
-  --n_layers 3 \
-  --lambda_gate 0.1 \
-  --llm_model Qwen3-8B
+python extract_primitives.py \
+  --dataset     FNSPID        \
+  --llm_model   Qwen3-8B      \
+  --output_path ../dataset/primitives/
 ```
 
-### Run Evaluation
+### Run Experiments
 
 ```bash
-python evaluate.py \
-  --checkpoint checkpoints/tess_best.pth \
-  --data ETTh1 \
-  --pred_len 96
+# Unimodal baseline (no text)
+sh run_baseline.sh
+
+# Direct text fusion baseline
+python run_direct_fusion.py --dataset FNSPID --epoch 100 --log_screen True
+
+# ⭐ TESS
+python run_tess.py \
+  --dataset    FNSPID    \
+  --use_tess   True      \
+  --use_gating True      \
+  --llm_model  Qwen3-8B  \
+  --epoch      100       \
+  --data_path  ../dataset/
 ```
 
-<br/>
+> 💡 Add `--use_cv True` to automatically select hyperparameters via cross-validation.
 
+---
 
-## ⚙️ Key Hyperparameters
+## ⚙️ Hyperparameters
+
+| Parameter | Description | Default |
+|:---|:---|:---:|
+| `--lambda_gate` | Gating supervision loss weight | `0.1` |
+| `--temperature` | LLM softmax temperature | `1.0` |
+| `--patch_len` | Patch length | `16` |
+| `--stride` | Patch stride | `8` |
+| `--d_model` | Transformer hidden dimension | `128` |
+| `--n_heads` | Attention heads | `8` |
+| `--n_layers` | Transformer encoder layers | `3` |
+| `--lr` | Learning rate (AdamW) | `1e-4` |
+| `--patience` | Early stopping patience | `10` |
+| `--llm_model` | LLM backbone for extraction | `Qwen3-8B` |
+
+---
+
+## 📎 Citation
+
+```bibtex
+@inproceedings{li2026tess,
+  title     = {From Text to Forecasts: Bridging Modality Gap with Temporal Evolution Semantic Space},
+  author    = {Li, Lehui and Wang, Yuyao and Yan, Jisheng and Zhang, Wei and
+               Deng, Jinliang and Sun, Haoliang and Han, Zhongyi and Gong, Yongshun},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  year      = {2026}
+}
+```
+
+---
+
+## 📬 Contact
+
+Have questions or want to collaborate? Reach out to the corresponding authors:
+
+&nbsp;&nbsp;✉️ &nbsp;**Jinliang Deng** — `jinliangdeng9588@gmail.com`  
+&nbsp;&nbsp;✉️ &nbsp;**Yongshun Gong** — `ysgong@sdu.edu.cn`
+
+---
 
 <div align="center">
-
-| Argument        | Description                              |   Default  |
-| :-------------- | :--------------------------------------- | :--------: |
-| `--lambda_gate` | Weight for confidence-gating supervision |    `0.1`   |
-| `--temperature` | LLM softmax temperature                  |    `1.0`   |
-| `--patch_len`   | Patch length                             |    `16`    |
-| `--stride`      | Patch stride                             |     `8`    |
-| `--d_model`     | Transformer hidden dimension             |    `128`   |
-| `--n_heads`     | Number of attention heads                |     `8`    |
-| `--n_layers`    | Number of Transformer encoder layers     |     `3`    |
-| `--epoch`       | Maximum training epochs                  |    `100`   |
-| `--patience`    | Early stopping patience                  |    `10`    |
-| `--lr`          | Learning rate                            |   `1e-4`   |
-| `--llm_model`   | Frozen LLM extractor                     | `Qwen3-8B` |
-
+<sub>
+⭐ If you find TESS useful, please consider starring the repo!
+<br/><br/>
+<i>ICML 2026 Oral · Shandong University · Boston University · Beihang University</i>
+</sub>
 </div>
-
-<br/>
-
-
-
-
