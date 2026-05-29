@@ -11,7 +11,7 @@
 <p><img src="https://img.shields.io/badge/🎙️_ICML_2026-Oral_Presentation-FF0000?style=for-the-badge" /></p>
 
 <p>
-  <a href="[https://arxiv.org](https://arxiv.org/abs/2603.12664)"><img src="https://img.shields.io/badge/ICML%202026-Oral%20Paper-FF0000?style=flat-square&logo=googledocs&logoColor=white" /></a>
+  <a href="https://arxiv.org/abs/2603.12664"><img src="https://img.shields.io/badge/ICML%202026-Oral%20Paper-FF0000?style=flat-square&logo=googledocs&logoColor=white" /></a>
   &nbsp;
   <a href="https://github.com/olivia3395/TESS"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" /></a>
   &nbsp;
