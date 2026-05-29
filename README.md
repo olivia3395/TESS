@@ -27,9 +27,7 @@
 
 ## Overview
 
-Real-world time series are often disrupted by external events — news, weather shocks, market sentiment — that cause abrupt, unpredictable shifts. While text naturally describes these events, existing multimodal methods fail to translate qualitative language into reliable numerical forecasting signals.
-
-**TESS** introduces a **Temporal Evolution Semantic Space** as an intermediate bottleneck: instead of feeding raw text directly to a forecaster, an LLM distills it into compact, interpretable temporal primitives, which then condition the forecasting model as structured exogenous signals.
+Real-world time series are often disrupted by external events — news, weather shocks, market sentiment — that cause abrupt, unpredictable shifts. While text naturally describes these events, existing multimodal methods fail to translate qualitative language into reliable numerical forecasting signals. **TESS** introduces a **Temporal Evolution Semantic Space** as an intermediate bottleneck: instead of feeding raw text directly to a forecaster, an LLM distills it into compact, interpretable temporal primitives, which then condition the forecasting model as structured exogenous signals.
 
 <br/>
 
