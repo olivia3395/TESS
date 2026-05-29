@@ -1,0 +1,48 @@
+# Electricity数据集三种语义标签提取命令
+# 可以直接复制到命令行运行
+
+# ==================================================
+# 1. Shape标签提取 (Rise/Fall/Peak/Recover/Oscillate)
+# ==================================================
+python /home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/electricity_shape_generation_with_retry.py \
+    --data-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_camf \
+    --output-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_shape \
+    --model-path /ssd/hf_home/models/Qwen3-8B \
+    --splits train vali test\
+    --batch-size 128 \
+    --max-new-tokens 64 \
+    --gpus 0,1,2,3,4,5,6,7
+
+# ==================================================
+# 2. Temporal Influence标签提取 (Immediate/Delayed/Sustained)
+# ==================================================
+python /home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/electricity_temporal_influence_generation_with_retry.py \
+    --data-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_camf \
+    --output-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_temporal_shape \
+    --model-path /ssd/hf_home/models/Qwen3-8B \
+    --splits train \
+    --batch-size 128 \
+    --max-new-tokens 64 \
+    --gpus 0,1,2,3,4,5,6,7
+
+# ==================================================
+# 3. Volatility标签提取 (High/Medium/Low)
+# ==================================================
+python /home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/electricity_volatility_generation_with_retry.py \
+    --data-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_camf \
+    --output-path /home/llh/MMTSF/MMTSF_LIB/dataset/Electricity/ver_volatility \
+    --model-path /ssd/hf_home/models/Qwen3-8B \
+    --splits train vali test \
+    --batch-size 128 \
+    --max-new-tokens 64 \
+    --gpus 0,1,2,3,4,5,6,7 --test-limit 16
+
+# ==================================================
+# 多GPU运行示例（使用GPU 0,1,2,3）
+# ==================================================
+# 只需将 --gpus 0 改为 --gpus 0,1,2,3 即可
+
+# ==================================================
+# 测试运行示例（仅处理前10个样本）
+# ==================================================
+# 添加 --test-limit 10 参数即可

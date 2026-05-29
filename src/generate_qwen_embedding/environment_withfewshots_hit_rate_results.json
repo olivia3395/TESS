@@ -1,0 +1,74 @@
+[
+  {
+    "description": "ver_synchronized vs ver_generated_withfewshots_trendstrength",
+    "split": "test",
+    "step_hit_rate": 0.0968320382546324,
+    "total_steps": 1673,
+    "match_steps": 162,
+    "strength_hit_rate": 0.200836820083682,
+    "total_strengths": 1673,
+    "match_strengths": 336
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_generated_withfewshots_trendonly",
+    "split": "test",
+    "step_hit_rate": 0.4931261207411835,
+    "total_steps": 1673,
+    "match_steps": 825
+  },
+  {
+    "description": "ver_synchronized vs ver_generated_withfewshots_trendstrength",
+    "split": "vali",
+    "step_hit_rate": 0.09945750452079566,
+    "total_steps": 1659,
+    "match_steps": 165,
+    "strength_hit_rate": 0.19710669077757687,
+    "total_strengths": 1659,
+    "match_strengths": 327
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_generated_withfewshots_trendonly",
+    "split": "vali",
+    "step_hit_rate": 0.5069318866787221,
+    "total_steps": 1659,
+    "match_steps": 841
+  },
+  {
+    "description": "ver_synchronized vs ver_generated_withfewshots_trendstrength",
+    "split": "train",
+    "step_hit_rate": 0.10353274883960804,
+    "total_steps": 7756,
+    "match_steps": 803,
+    "strength_hit_rate": 0.20113460546673542,
+    "total_strengths": 7756,
+    "match_strengths": 1560
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_generated_withfewshots_trendonly",
+    "split": "train",
+    "step_hit_rate": 0.5041258380608561,
+    "total_steps": 7756,
+    "match_steps": 3910
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_generated_withfewshots_globalonly",
+    "split": "test",
+    "record_hit_rate": 0.5313807531380753,
+    "total_records": 239,
+    "match_records": 127
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_generated_withfewshots_globalonly",
+    "split": "vali",
+    "record_hit_rate": 0.5654008438818565,
+    "total_records": 237,
+    "match_records": 134
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_generated_withfewshots_globalonly",
+    "split": "train",
+    "record_hit_rate": 0.516245487364621,
+    "total_records": 1108,
+    "match_records": 572
+  }
+]

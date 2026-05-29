@@ -1,0 +1,68 @@
+onlynews消融实验数据集命中率计算结果:
+================================================================================
+ver_synchronized vs ver_8B_Ablation_onlynews_trendstrength (test):
+  Step级别:  匹配   807/ 7835 命中率: 0.1030 (10.30%)
+  强度级别:  匹配  1379/ 7835 命中率: 0.1760 (17.60%)
+
+ver_synchronized vs ver_8B_Ablation_onlynews_trendstrength (vali):
+  Step级别:  匹配   772/ 7120 命中率: 0.1084 (10.84%)
+  强度级别:  匹配  1319/ 7120 命中率: 0.1853 (18.53%)
+
+ver_synchronized vs ver_8B_Ablation_onlynews_trendstrength (train):
+  Step级别:  匹配  3341/34210 命中率: 0.0977 (9.77%)
+  强度级别:  匹配  5927/34210 命中率: 0.1733 (17.33%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlynews_trendonly (test):
+  Step级别:  匹配  4001/ 7835 命中率: 0.5107 (51.07%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlynews_trendonly (vali):
+  Step级别:  匹配  3625/ 7120 命中率: 0.5091 (50.91%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlynews_trendonly (train):
+  Step级别:  匹配 16837/34210 命中率: 0.4922 (49.22%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlynews_globalonly (test):
+  Global级别:匹配  914/1567 命中率: 0.5833 (58.33%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlynews_globalonly (vali):
+  Global级别:匹配  823/1424 命中率: 0.5779 (57.79%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlynews_globalonly (train):
+  Global级别:匹配 4003/6842 命中率: 0.5851 (58.51%)
+
+onlynews结果已保存到: /home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/8B_Ablation_onlynews_hit_rate_results.json
+
+================================================================================
+onlyts消融实验数据集命中率计算结果:
+================================================================================
+ver_synchronized vs ver_8B_Ablation_onlyts_trendstrength (test):
+  Step级别:  匹配   728/ 7835 命中率: 0.0929 (9.29%)
+  强度级别:  匹配  1430/ 7835 命中率: 0.1825 (18.25%)
+
+ver_synchronized vs ver_8B_Ablation_onlyts_trendstrength (vali):
+  Step级别:  匹配   696/ 7120 命中率: 0.0978 (9.78%)
+  强度级别:  匹配  1406/ 7120 命中率: 0.1975 (19.75%)
+
+ver_synchronized vs ver_8B_Ablation_onlyts_trendstrength (train):
+  Step级别:  匹配  3218/34210 命中率: 0.0941 (9.41%)
+  强度级别:  匹配  6599/34210 命中率: 0.1929 (19.29%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlyts_trendonly (test):
+  Step级别:  匹配  3761/ 7835 命中率: 0.4800 (48.00%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlyts_trendonly (vali):
+  Step级别:  匹配  3387/ 7120 命中率: 0.4757 (47.57%)
+
+ver_synchronized_trendonly vs ver_8B_Ablation_onlyts_trendonly (train):
+  Step级别:  匹配 16401/34210 命中率: 0.4794 (47.94%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlyts_globalonly (test):
+  Global级别:匹配 1106/1567 命中率: 0.7058 (70.58%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlyts_globalonly (vali):
+  Global级别:匹配  928/1424 命中率: 0.6517 (65.17%)
+
+ver_synchronized_globalonly vs ver_8B_Ablation_onlyts_globalonly (train):
+  Global级别:匹配 4696/6842 命中率: 0.6863 (68.63%)
+
+onlyts结果已保存到: /home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/8B_Ablation_onlyts_hit_rate_results.json

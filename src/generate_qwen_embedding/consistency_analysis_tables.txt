@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/generate_consistency_table.py", line 331, in <module>
+    main()
+  File "/home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/generate_consistency_table.py", line 322, in main
+    results = parse_consistency_data(content)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/llh/MMTSF/MMTSF_LIB/src/generate_qwen_embedding/generate_consistency_table.py", line 62, in parse_consistency_data
+    percentage = float(percentage_str)
+                 ^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''

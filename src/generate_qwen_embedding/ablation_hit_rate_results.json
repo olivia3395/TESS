@@ -1,0 +1,83 @@
+[
+  {
+    "description": "ver_synchronized vs ver_8B_Ablation_trendstrength",
+    "split": "test",
+    "step_hit_rate": 0.10299936183790682,
+    "total_steps": 7835,
+    "match_steps": 807,
+    "strength_hit_rate": 0.17600510529674537,
+    "total_strengths": 7835,
+    "match_strengths": 1379
+  },
+  {
+    "description": "ver_synchronized vs ver_8B_Ablation_trendstrength",
+    "split": "vali",
+    "step_hit_rate": 0.10842696629213483,
+    "total_steps": 7120,
+    "match_steps": 772,
+    "strength_hit_rate": 0.18525280898876403,
+    "total_strengths": 7120,
+    "match_strengths": 1319
+  },
+  {
+    "description": "ver_synchronized vs ver_8B_Ablation_trendstrength",
+    "split": "train",
+    "step_hit_rate": 0.0976615024846536,
+    "total_steps": 34210,
+    "match_steps": 3341,
+    "strength_hit_rate": 0.17325343466822565,
+    "total_strengths": 34210,
+    "match_strengths": 5927
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_8B_Ablation_trendonly",
+    "split": "test",
+    "step_hit_rate": 0.5106573069559668,
+    "total_steps": 7835,
+    "match_steps": 4001
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_8B_Ablation_trendonly",
+    "split": "vali",
+    "step_hit_rate": 0.5091292134831461,
+    "total_steps": 7120,
+    "match_steps": 3625
+  },
+  {
+    "description": "ver_synchronized_trendonly vs ver_8B_Ablation_trendonly",
+    "split": "train",
+    "step_hit_rate": 0.4921660333235896,
+    "total_steps": 34210,
+    "match_steps": 16837
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_8B_Ablation_globalonly",
+    "split": "test",
+    "step_hit_rate": 0.0,
+    "total_steps": 0,
+    "match_steps": 0,
+    "record_hit_rate": 0.5832801531589024,
+    "total_records": 1567,
+    "match_records": 914
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_8B_Ablation_globalonly",
+    "split": "vali",
+    "step_hit_rate": 0.0,
+    "total_steps": 0,
+    "match_steps": 0,
+    "record_hit_rate": 0.5779494382022472,
+    "total_records": 1424,
+    "match_records": 823
+  },
+  {
+    "description": "ver_synchronized_globalonly vs ver_8B_Ablation_globalonly",
+    "split": "train",
+    "step_hit_rate": 0.0,
+    "total_steps": 0,
+    "match_steps": 0,
+    "record_hit_rate": 0.585062847120725,
+    "total_records": 6842,
+    "match_records": 4003
+  }
+]
