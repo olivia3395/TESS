@@ -1,0 +1,33 @@
+
+learning_rate: [0.001]
+# learning_rate: [0.001,0.005,0.01]
+
+requires_news_embedding: true
+
+# embedding_size: 512
+embedding_size: 256
+
+# embedding_size: [256,512,1024]
+# depth: [5, 10, 15]
+depth: 10 
+num_envs: 10
+# num_envs: [10]
+# dropout: [0.1, 0.2, 0.3]
+dropout: 0.1
+meta_drop: 0.1
+sudden_drop: 0.1
+# sudden_drop: [0.1, 0.2, 0.3]
+fuse_drop: 0.2
+# fuse_drop: [0.1, 0.2, 0.3]
+
+e_layers: 1
+d_layers: 1
+factor: 3
+enc_in: 1
+dec_in: 1
+c_out: 1
+embedd: timeF
+use_multimodal: True
+inverse: False
+text_emb_dim: 4096
+hyper_parameters: ["learning_rate"]

@@ -1,0 +1,105 @@
+
+
+learning_rate: [0.005,0.001,0.0001,0.0005]
+# learning_rate: [0.005]
+
+embedding_size: 512
+
+codebook_dim: [64,128,256,512]
+
+depth: 10 
+num_envs: [10,50,75,100]
+# num_envs: [10]
+
+dropout: 0.1
+meta_drop: [0.1,0.2,0.3]
+sudden_drop: [0.1,0.2,0.3]
+fuse_drop: [0.1,0.2]
+# dropout: [0.1]
+# meta_drop: [0.3]
+# sudden_drop: [0.2]
+e_layers: 1
+d_layers: 1
+factor: 3
+enc_in: 1
+dec_in: 1
+c_out: 1
+embedd: timeF
+use_multimodal: True
+inverse: False
+text_emb_dim: 4096
+hyper_parameters: ["num_envs","codebook_dim","learning_rate","meta_drop","sudden_drop","fuse_drop"]
+
+
+# learning_rate: 0.005
+# embedding_size: [128]
+# depth: 10 
+# num_envs: [25]
+# # num_envs: [25]
+# dropout: 0.1 
+# e_layers: 1
+# d_layers: 1
+# factor: 3
+# enc_in: 1
+# dec_in: 1
+# c_out: 1
+# embedd: timeF
+# use_multimodal: True
+# text_emb_dim: 4096
+# beta1: 0.2
+# beta2: 0
+# vq_weight: [0]
+# hyper_parameters: ["vq_weight","num_envs","embedding_size"]
+
+
+
+## FNSPID 
+# learning_rate: 0.005
+# embedding_size: 512
+# depth: 10 
+# num_envs: 50
+# # num_envs: [25]
+# dropout: 0.1 
+# e_layers: 1
+# d_layers: 1
+# factor: 3
+# enc_in: 1
+# dec_in: 1
+# c_out: 1
+# embedd: timeF
+# use_multimodal: True
+# text_emb_dim: 4096
+# beta1: 0.2
+# beta2: 0
+# vq_weight: [0]
+# hyper_parameters: ["vq_weight","num_envs","embedding_size"]
+
+
+## FNSPID 
+
+
+# learning_rate: 0.005
+
+# embedding_size: 512
+
+# codebook_dim: 512
+
+# depth: 10 
+# num_envs: 50
+
+
+# dropout: 0.2
+# meta_drop: 0.3
+# sudden_drop: 0.2
+# fuse_drop: 0.1
+
+# e_layers: 1
+# d_layers: 1
+# factor: 3
+# enc_in: 1
+# dec_in: 1
+# c_out: 1
+# embedd: timeF
+# use_multimodal: True
+# inverse: False
+# text_emb_dim: 4096

@@ -1,0 +1,44 @@
+e_layers: 2
+d_layers: 1
+factor: 3
+learning_rate: [0.0005,0.0001,0.00005]
+# d_model: 32
+# d_ff: 32
+embedding_size: 512
+enc_in: 1
+dec_in: 1
+c_out: 1
+itr: 1
+use_multimodal : False
+
+# Additional parameters that might be useful
+dropout: 0.1
+n_heads: 8
+mlp_activation: gelu
+train_epochs: 10
+use_amp: True
+llm_layers: 32
+token_len: 5
+mlp_hidden_dim: 256
+mlp_hidden_layers: 2
+inverse : False
+
+
+hyper_parameters: ["learning_rate"]
+
+#best record
+# Bitcoin
+# 30 Jul 20:02    INFO    Parameters: ['seed', 'learning_rate']=(2025, 0.0001),
+# Test: MAE: 1.4986    MSE: 3.6040    RMSE: 1.8984    MAPE: 0.0904    MSPE: 0.0141    
+
+# Electricity
+# 30 Jul 21:02    INFO    Parameters: ['seed', 'learning_rate']=(2025, 0.0005),
+# Test: MAE: 0.1113    MSE: 0.0282    RMSE: 0.1681    MAPE: 0.3803    MSPE: 147.6793   
+
+# FNSPID
+# 30 Jul 21:57    INFO    Parameters: ['seed', 'learning_rate']=(2025, 0.0001),
+# Test: MAE: 0.0153    MSE: 0.0016    RMSE: 0.0399    MAPE: 0.2115    MSPE: 12.2483  
+
+# Env
+# 30 Jul 20:11    INFO    Parameters: ['seed', 'learning_rate']=(2025, 0.0001),
+# Test: MAE: 0.4228    MSE: 0.3726    RMSE: 0.6104    MAPE: 2.3462    MSPE: 301.9420  

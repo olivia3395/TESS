@@ -1,0 +1,31 @@
+learning_rate: 0.001
+
+requires_news_embedding: false
+requires_llm_hidden: false
+
+embedding_size: 512
+
+depth: 10
+dropout: 0.1
+sudden_drop: 0.1
+fuse_drop: 0.1
+
+e_layers: 1
+enc_in: 1
+embed: fixed
+
+use_multimodal: true
+
+text_model_path: "/home/llh/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218"
+text_max_length: 1024
+text_model_dtype: float16
+text_finetune: false
+text_chat_template: true
+text_enable_thinking: false
+text_add_generation_prompt: false
+use_llm_encoder: false ## 是否使用LLM编码器,如果选择false,则使用LLM的词表进行embedding 
+self_attn_heads: 8
+self_attn_layers: 2
+self_attn_ffn_dim: 2048
+
+hyper_parameters: ["seed"]

@@ -1,0 +1,52 @@
+
+# MultiModal Baseline with Dynamic Dropout and Max Pooling
+# 基于MultiModal_Baseline_Dynamic_Dropout，将文本embedding的池化方式从平均池化改为最大池化
+# 支持token级别文本输入，学习性dropout重要token
+# 使用最大池化代替平均池化来聚合token embeddings，突出最重要的token特征
+
+# learning_rate: [0.005]
+learning_rate: [0.001,0.005,0.01]
+
+requires_news_embedding: true
+
+# embedding_size: 512
+embedding_size: [256,512,1024]
+
+# depth: [5, 10, 15]
+depth: 10
+num_envs: 10
+# num_envs: [10]
+dropout: [0.1, 0.2, 0.3]
+# dropout: 0.1
+meta_drop: 0.1
+# sudden_drop: 0.1
+sudden_drop: [0.1, 0.2, 0.3]
+# fuse_drop: 0.1
+fuse_drop: [0.1, 0.2, 0.3]
+
+e_layers: 1
+d_layers: 1
+factor: 3
+enc_in: 1
+dec_in: 1
+c_out: 1
+embedd: timeF
+use_multimodal: True
+inverse: False
+text_emb_dim: 4096
+
+# Loss weights for dynamic dropout
+beta1: 0.2
+beta2: 0.2
+beta3: 0.1   # word embedding loss weight - 监督dropout后的embeddings接近理想embeddings
+beta4: 0.05  # reconstruction loss weight (reserved for future use)
+
+# DataLoader configuration
+# 设置为0以避免多进程并发训练时的线程资源耗尽
+# 当同时运行多个训练任务时，建议设置为0（单进程加载，稍慢但稳定）
+# 如果只运行单个训练任务，可以设置为2-4以提升数据加载速度
+num_workers: 2
+
+# Hyperparameter search space
+hyper_parameters: ["learning_rate","embedding_size","dropout","sudden_drop","fuse_drop"]
+

@@ -1,0 +1,3482 @@
+aliases:
+  FNSPID/ver_camf:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf/test.json
+      train: ver_camf/train.json
+      vali: ver_camf/vali.json
+    version: ver_camf
+  FNSPID/ver_camf_amp_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf_amp_volatility/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_amp_volatility/test.json
+      train: ver_camf_amp_volatility/train.json
+      vali: ver_camf_amp_volatility/vali.json
+    version: ver_camf_amp_volatility
+  FNSPID/ver_camf_amp_volatility_global_concat:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf_amp_volatility_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_amp_volatility_global_concat/test.json
+      train: ver_camf_amp_volatility_global_concat/train.json
+      vali: ver_camf_amp_volatility_global_concat/vali.json
+    version: ver_camf_amp_volatility_global_concat
+  FNSPID/ver_camf_amp_volatility_tertile:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf_amp_volatility_tertile/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_amp_volatility_tertile/test.json
+      train: ver_camf_amp_volatility_tertile/train.json
+      vali: ver_camf_amp_volatility_tertile/vali.json
+    version: ver_camf_amp_volatility_tertile
+  FNSPID/ver_camf_amp_volatility_tertile_global_concat:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf_amp_volatility_tertile_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_amp_volatility_tertile_global_concat/test.json
+      train: ver_camf_amp_volatility_tertile_global_concat/train.json
+      vali: ver_camf_amp_volatility_tertile_global_concat/vali.json
+    version: ver_camf_amp_volatility_tertile_global_concat
+  FNSPID/ver_syn_temporal:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_syn_temporal/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_syn_temporal/test.json
+      train: ver_syn_temporal/train.json
+      vali: ver_syn_temporal/vali.json
+    version: ver_syn_temporal
+  FNSPID/ver_syn_temporal_global_concat:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_syn_temporal_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_syn_temporal_global_concat/test.json
+      train: ver_syn_temporal_global_concat/train.json
+      vali: ver_syn_temporal_global_concat/vali.json
+    version: ver_syn_temporal_global_concat
+  FNSPID/ver_camf_info_certainty:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_info_certainty/test.json
+      train: ver_camf_info_certainty/train.json
+      vali: ver_camf_info_certainty/vali.json
+    version: ver_camf_info_certainty
+  FNSPID/ver_3var_timx_combined:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_3var_timx_combined/test.json
+      train: ver_3var_timx_combined/train.json
+      vali: ver_3var_timx_combined/vali.json
+    version: ver_3var_timx_combined
+  FNSPID/ver_3var_timx_syn_conbined:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_3var_timx_syn_conbined/test.json
+      train: ver_3var_timx_syn_conbined/train.json
+      vali: ver_3var_timx_syn_conbined/vali.json
+    version: ver_3var_timx_syn_conbined
+  FNSPID/ver_shape_globalonly_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_globalonly_concat/test.json
+      train: ver_shape_globalonly_concat/train.json
+      vali: ver_shape_globalonly_concat/vali.json
+    version: ver_shape_globalonly_concat
+    embeddings:
+      news:
+        path: ver_shape_globalonly_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_synchronized_shape_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_synchronized_shape_global_concat/test.json
+      train: ver_synchronized_shape_global_concat/train.json
+      vali: ver_synchronized_shape_global_concat/vali.json
+    version: ver_synchronized_shape_global_concat
+    embeddings:
+      news:
+        path: ver_synchronized_shape_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_global_volatility_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_volatility_concat/test.json
+      train: ver_global_volatility_concat/train.json
+      vali: ver_global_volatility_concat/vali.json
+    version: ver_global_volatility_concat
+    embeddings:
+      news:
+        path: ver_global_volatility_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_global_concat/test.json
+      train: ver_temporal_global_concat/train.json
+      vali: ver_temporal_global_concat/vali.json
+    version: ver_temporal_global_concat
+    embeddings:
+      news:
+        path: ver_temporal_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_volatility_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility_concat/test.json
+      train: ver_temporal_volatility_concat/train.json
+      vali: ver_temporal_volatility_concat/vali.json
+    version: ver_temporal_volatility_concat
+    embeddings:
+      news:
+        path: ver_temporal_volatility_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_shape_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_shape_concat/test.json
+      train: ver_temporal_shape_concat/train.json
+      vali: ver_temporal_shape_concat/vali.json
+    version: ver_temporal_shape_concat
+    embeddings:
+      news:
+        path: ver_temporal_shape_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_shape_volatility_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility_concat/test.json
+      train: ver_shape_volatility_concat/train.json
+      vali: ver_shape_volatility_concat/vali.json
+    version: ver_shape_volatility_concat
+    embeddings:
+      news:
+        path: ver_shape_volatility_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_shape_volatility_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_shape_volatility_concat/test.json
+      train: ver_temporal_shape_volatility_concat/train.json
+      vali: ver_temporal_shape_volatility_concat/vali.json
+    version: ver_temporal_shape_volatility_concat
+    embeddings:
+      news:
+        path: ver_temporal_shape_volatility_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_volatility_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility_global_concat/test.json
+      train: ver_temporal_volatility_global_concat/train.json
+      vali: ver_temporal_volatility_global_concat/vali.json
+    version: ver_temporal_volatility_global_concat
+    embeddings:
+      news:
+        path: ver_temporal_volatility_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_shape_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_shape_global_concat/test.json
+      train: ver_temporal_shape_global_concat/train.json
+      vali: ver_temporal_shape_global_concat/vali.json
+    version: ver_temporal_shape_global_concat
+    embeddings:
+      news:
+        path: ver_temporal_shape_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_shape_volatility_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility_global_concat/test.json
+      train: ver_shape_volatility_global_concat/train.json
+      vali: ver_shape_volatility_global_concat/vali.json
+    version: ver_shape_volatility_global_concat
+    embeddings:
+      news:
+        path: ver_shape_volatility_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_temporal_shape_volatility_global_concat:
+    dataset_name: FNSPID
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_shape_volatility_global_concat/test.json
+      train: ver_temporal_shape_volatility_global_concat/train.json
+      vali: ver_temporal_shape_volatility_global_concat/vali.json
+    version: ver_temporal_shape_volatility_global_concat
+    embeddings:
+      news:
+        path: ver_temporal_shape_volatility_global_concat/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+  FNSPID/ver_camf_case:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_camf_case/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_camf_case/test.json
+      train: ver_camf_case/train.json
+      vali: ver_camf_case/vali.json
+    version: ver_camf_case
+  FNSPID/ver_turn1_aug1:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_turn1_aug1/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_turn1_aug1/test.json
+      train: ver_turn1_aug1/train.json
+      vali: ver_turn1_aug1/vali.json
+    version: ver_turn1_aug1
+  FNSPID/ver_turn1_aug2:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_turn1_aug2/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_turn1_aug2/test.json
+      train: ver_turn1_aug2/train.json
+      vali: ver_turn1_aug2/vali.json
+    version: ver_turn1_aug2
+  FNSPID/ver_turn1_final:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_turn1_final/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_turn1_final/test.json
+      train: ver_turn1_final/train.json
+      vali: ver_turn1_final/vali.json
+    version: ver_turn1_final
+  FNSPID/ver_gen2:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen2/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen2/test.json
+      train: ver_gen2/train.json
+      vali: ver_gen2/vali.json
+    version: ver_gen2
+  FNSPID/ver_gen3:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen3/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen3/test.json
+      train: ver_gen3/train.json
+      vali: ver_gen3/vali.json
+    version: ver_gen3
+  FNSPID/ver_gen1:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen1/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen1/test.json
+      train: ver_gen1/train.json
+      vali: ver_gen1/vali.json
+    version: ver_gen1
+  FNSPID/ver_gen5:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen5/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen5/test.json
+      train: ver_gen5/train.json
+      vali: ver_gen5/vali.json
+    version: ver_gen5
+  FNSPID/ver_gen4:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen4/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen4/test.json
+      train: ver_gen4/train.json
+      vali: ver_gen4/vali.json
+    version: ver_gen4
+  FNSPID/ver_gen6:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen6/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen6/test.json
+      train: ver_gen6/train.json
+      vali: ver_gen6/vali.json
+    version: ver_gen6
+  FNSPID/ver_gen7:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen7/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen7/test.json
+      train: ver_gen7/train.json
+      vali: ver_gen7/vali.json
+    version: ver_gen7
+  FNSPID/ver_gen8:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen8/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen8/test.json
+      train: ver_gen8/train.json
+      vali: ver_gen8/vali.json
+    version: ver_gen8
+  FNSPID/ver_gen9:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen9/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen9/test.json
+      train: ver_gen9/train.json
+      vali: ver_gen9/vali.json
+    version: ver_gen9
+  FNSPID/ver_gen10:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_gen10/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_gen10/test.json
+      train: ver_gen10/train.json
+      vali: ver_gen10/vali.json
+    version: ver_gen10
+  FNSPID/ver_8BInstruct_trendstrength:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_trendstrength/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_trendstrength/test.json
+      train: ver_8BInstruct_trendstrength/train.json
+      vali: ver_8BInstruct_trendstrength/vali.json
+    version: ver_8BInstruct_trendstrength
+  FNSPID/ver_8BInstruct_trendonly:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_trendonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_trendonly/test.json
+      train: ver_8BInstruct_trendonly/train.json
+      vali: ver_8BInstruct_trendonly/vali.json
+    version: ver_8BInstruct_trendonly
+  FNSPID/ver_8BInstruct_globalonly:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_globalonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_globalonly/test.json
+      train: ver_8BInstruct_globalonly/train.json
+      vali: ver_8BInstruct_globalonly/vali.json
+    version: ver_8BInstruct_globalonly
+  FNSPID/ver_8BInstruct_withfewshots_trendstrength:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_withfewshots_trendstrength/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_withfewshots_trendstrength/test.json
+      train: ver_8BInstruct_withfewshots_trendstrength/train.json
+      vali: ver_8BInstruct_withfewshots_trendstrength/vali.json
+    version: ver_8BInstruct_withfewshots_trendstrength
+  FNSPID/ver_8BInstruct_withfewshots_trendonly:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_withfewshots_trendonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_withfewshots_trendonly/test.json
+      train: ver_8BInstruct_withfewshots_trendonly/train.json
+      vali: ver_8BInstruct_withfewshots_trendonly/vali.json
+    version: ver_8BInstruct_withfewshots_trendonly
+  FNSPID/ver_8BInstruct_withfewshots_globalonly:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_withfewshots_globalonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_withfewshots_globalonly/test.json
+      train: ver_8BInstruct_withfewshots_globalonly/train.json
+      vali: ver_8BInstruct_withfewshots_globalonly/vali.json
+    version: ver_8BInstruct_withfewshots_globalonly
+  FNSPID/ver_8BInstruct_withfewshots_trendonly_case:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_withfewshots_trendonly_case/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_withfewshots_trendonly_case/test.json
+      train: ver_8BInstruct_withfewshots_trendonly_case/train.json
+      vali: ver_8BInstruct_withfewshots_trendonly_case/vali.json
+    version: ver_8BInstruct_withfewshots_trendonly_case
+  FNSPID/ver_8BInstruct_withfewshots_globalonly_case:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_8BInstruct_withfewshots_globalonly_case/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_8BInstruct_withfewshots_globalonly_case/test.json
+      train: ver_8BInstruct_withfewshots_globalonly_case/train.json
+      vali: ver_8BInstruct_withfewshots_globalonly_case/vali.json
+    version: ver_8BInstruct_withfewshots_globalonly_case
+  FNSPID/ver_volatility_code:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_volatility_code/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_volatility_code/test.json
+      train: ver_volatility_code/train.json
+      vali: ver_volatility_code/vali.json
+    version: ver_volatility_code
+  Environment/ver_camf:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_camf/test.json
+      train: ver_camf/train.json
+      vali: ver_camf/vali.json
+    version: ver_camf
+  Environment/ver_generated_withfewshots_trendstrength:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendstrength/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_generated_withfewshots_trendstrength/test.json
+      train: ver_generated_withfewshots_trendstrength/train.json
+      vali: ver_generated_withfewshots_trendstrength/vali.json
+    version: ver_generated_withfewshots_trendstrength
+  Environment/ver_generated_withfewshots_trendonly:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_generated_withfewshots_trendonly/test.json
+      train: ver_generated_withfewshots_trendonly/train.json
+      vali: ver_generated_withfewshots_trendonly/vali.json
+    version: ver_generated_withfewshots_trendonly
+  Environment/ver_generated_withfewshots_globalonly:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_globalonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_generated_withfewshots_globalonly/test.json
+      train: ver_generated_withfewshots_globalonly/train.json
+      vali: ver_generated_withfewshots_globalonly/vali.json
+    version: ver_generated_withfewshots_globalonly
+  Environment/ver_global_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_natural/test.json
+      train: ver_global_shape_natural/train.json
+      vali: ver_global_shape_natural/vali.json
+    version: ver_global_shape_natural
+  Environment/ver_global_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_structured/test.json
+      train: ver_global_shape_structured/train.json
+      vali: ver_global_shape_structured/vali.json
+    version: ver_global_shape_structured
+  Environment/ver_global_temporal_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_natural/test.json
+      train: ver_global_temporal_shape_natural/train.json
+      vali: ver_global_temporal_shape_natural/vali.json
+    version: ver_global_temporal_shape_natural
+  Environment/ver_global_temporal_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_structured/test.json
+      train: ver_global_temporal_shape_structured/train.json
+      vali: ver_global_temporal_shape_structured/vali.json
+    version: ver_global_temporal_shape_structured
+  Environment/ver_global_volatility_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_volatility_natural/test.json
+      train: ver_global_volatility_natural/train.json
+      vali: ver_global_volatility_natural/vali.json
+    version: ver_global_volatility_natural
+  Environment/ver_global_volatility_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_volatility_structured/test.json
+      train: ver_global_volatility_structured/train.json
+      vali: ver_global_volatility_structured/vali.json
+    version: ver_global_volatility_structured
+  Environment/ver_shape_temporal_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_natural/test.json
+      train: ver_shape_temporal_shape_natural/train.json
+      vali: ver_shape_temporal_shape_natural/vali.json
+    version: ver_shape_temporal_shape_natural
+  Environment/ver_shape_temporal_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_structured/test.json
+      train: ver_shape_temporal_shape_structured/train.json
+      vali: ver_shape_temporal_shape_structured/vali.json
+    version: ver_shape_temporal_shape_structured
+  Environment/ver_volatility_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_shape_natural/test.json
+      train: ver_volatility_shape_natural/train.json
+      vali: ver_volatility_shape_natural/vali.json
+    version: ver_volatility_shape_natural
+  Environment/ver_volatility_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_shape_structured/test.json
+      train: ver_volatility_shape_structured/train.json
+      vali: ver_volatility_shape_structured/vali.json
+    version: ver_volatility_shape_structured
+  Environment/ver_volatility_temporal_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_temporal_shape_natural/test.json
+      train: ver_volatility_temporal_shape_natural/train.json
+      vali: ver_volatility_temporal_shape_natural/vali.json
+    version: ver_volatility_temporal_shape_natural
+  Environment/ver_volatility_temporal_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_temporal_shape_structured/test.json
+      train: ver_volatility_temporal_shape_structured/train.json
+      vali: ver_volatility_temporal_shape_structured/vali.json
+    version: ver_volatility_temporal_shape_structured
+  Environment/ver_global_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Environment/ver_global_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Environment/ver_global_temporal_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape/test.json
+      train: ver_global_temporal_shape/train.json
+      vali: ver_global_temporal_shape/vali.json
+    version: ver_global_temporal_shape
+  Environment/ver_global_temporal_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape/test.json
+      train: ver_global_temporal_shape/train.json
+      vali: ver_global_temporal_shape/vali.json
+    version: ver_global_temporal_shape
+  Environment/ver_shape_temporal_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape/test.json
+      train: ver_shape_temporal_shape/train.json
+      vali: ver_shape_temporal_shape/vali.json
+    version: ver_shape_temporal_shape
+  Environment/ver_shape_temporal_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape/test.json
+      train: ver_shape_temporal_shape/train.json
+      vali: ver_shape_temporal_shape/vali.json
+    version: ver_shape_temporal_shape
+  Environment/ver_global_volatility_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Environment/ver_global_volatility_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Environment/ver_volatility_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Environment/ver_volatility_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Environment/ver_volatility_temporal_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_temporal_shape/test.json
+      train: ver_volatility_temporal_shape/train.json
+      vali: ver_volatility_temporal_shape/vali.json
+    version: ver_volatility_temporal_shape
+  Environment/ver_volatility_temporal_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_volatility_temporal_shape/test.json
+      train: ver_volatility_temporal_shape/train.json
+      vali: ver_volatility_temporal_shape/vali.json
+    version: ver_volatility_temporal_shape
+  Environment/ver_global_shape_temporal_shape_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Environment/ver_global_shape_temporal_shape_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Environment/ver_global_shape_volatility_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Environment/ver_global_shape_volatility_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Environment/ver_global_temporal_shape_volatility_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Environment/ver_global_temporal_shape_volatility_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Environment/ver_shape_temporal_shape_volatility_avg:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Environment/ver_shape_temporal_shape_volatility_max:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Environment/ver_global_shape_temporal_shape_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_temporal_shape_natural/test.json
+      train: ver_global_shape_temporal_shape_natural/train.json
+      vali: ver_global_shape_temporal_shape_natural/vali.json
+    version: ver_global_shape_temporal_shape_natural
+  Environment/ver_global_shape_temporal_shape_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_temporal_shape_structured/test.json
+      train: ver_global_shape_temporal_shape_structured/train.json
+      vali: ver_global_shape_temporal_shape_structured/vali.json
+    version: ver_global_shape_temporal_shape_structured
+  Environment/ver_global_shape_volatility_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_volatility_natural/test.json
+      train: ver_global_shape_volatility_natural/train.json
+      vali: ver_global_shape_volatility_natural/vali.json
+    version: ver_global_shape_volatility_natural
+  Environment/ver_global_shape_volatility_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_shape_volatility_structured/test.json
+      train: ver_global_shape_volatility_structured/train.json
+      vali: ver_global_shape_volatility_structured/vali.json
+    version: ver_global_shape_volatility_structured
+  Environment/ver_global_temporal_shape_volatility_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_volatility_natural/test.json
+      train: ver_global_temporal_shape_volatility_natural/train.json
+      vali: ver_global_temporal_shape_volatility_natural/vali.json
+    version: ver_global_temporal_shape_volatility_natural
+  Environment/ver_global_temporal_shape_volatility_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_global_temporal_shape_volatility_structured/test.json
+      train: ver_global_temporal_shape_volatility_structured/train.json
+      vali: ver_global_temporal_shape_volatility_structured/vali.json
+    version: ver_global_temporal_shape_volatility_structured
+  Environment/ver_shape_temporal_shape_volatility_natural:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_volatility_natural/test.json
+      train: ver_shape_temporal_shape_volatility_natural/train.json
+      vali: ver_shape_temporal_shape_volatility_natural/vali.json
+    version: ver_shape_temporal_shape_volatility_natural
+  Environment/ver_shape_temporal_shape_volatility_structured:
+    dataset_name: Environment
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Environment
+    splits:
+      test: ver_shape_temporal_shape_volatility_structured/test.json
+      train: ver_shape_temporal_shape_volatility_structured/train.json
+      vali: ver_shape_temporal_shape_volatility_structured/vali.json
+    version: ver_shape_temporal_shape_volatility_structured
+  Bitcoin/ver_generated_withfewshots_globalonly:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_globalonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_generated_withfewshots_globalonly/test.json
+      train: ver_generated_withfewshots_globalonly/train.json
+      vali: ver_generated_withfewshots_globalonly/vali.json
+    version: ver_generated_withfewshots_globalonly
+  Bitcoin/ver_generated_withfewshots_trendonly:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_generated_withfewshots_trendonly/test.json
+      train: ver_generated_withfewshots_trendonly/train.json
+      vali: ver_generated_withfewshots_trendonly/vali.json
+    version: ver_generated_withfewshots_trendonly
+  Bitcoin/ver_camf:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_camf/test.json
+      train: ver_camf/train.json
+      vali: ver_camf/vali.json
+    version: ver_camf
+  Bitcoin/ver_generated_withfewshots_trendstrength:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendstrength/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_generated_withfewshots_trendstrength/test.json
+      train: ver_generated_withfewshots_trendstrength/train.json
+      vali: ver_generated_withfewshots_trendstrength/vali.json
+    version: ver_generated_withfewshots_trendstrength
+  Electricity/ver_generated_withfewshots_globalonly:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_globalonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_generated_withfewshots_globalonly/test.json
+      train: ver_generated_withfewshots_globalonly/train.json
+      vali: ver_generated_withfewshots_globalonly/vali.json
+    version: ver_generated_withfewshots_globalonly
+  Electricity/ver_generated_withfewshots_trendonly:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendonly/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_generated_withfewshots_trendonly/test.json
+      train: ver_generated_withfewshots_trendonly/train.json
+      vali: ver_generated_withfewshots_trendonly/vali.json
+    version: ver_generated_withfewshots_trendonly
+  Electricity/ver_camf:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_camf/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_camf/test.json
+      train: ver_camf/train.json
+      vali: ver_camf/vali.json
+    version: ver_camf
+  Electricity/ver_generated_withfewshots_trendstrength:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_generated_withfewshots_trendstrength/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_generated_withfewshots_trendstrength/test.json
+      train: ver_generated_withfewshots_trendstrength/train.json
+      vali: ver_generated_withfewshots_trendstrength/vali.json
+    version: ver_generated_withfewshots_trendstrength
+  Electricity/ver_global_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_natural/test.json
+      train: ver_global_shape_natural/train.json
+      vali: ver_global_shape_natural/vali.json
+    version: ver_global_shape_natural
+  Electricity/ver_global_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_structured/test.json
+      train: ver_global_shape_structured/train.json
+      vali: ver_global_shape_structured/vali.json
+    version: ver_global_shape_structured
+  Electricity/ver_global_temporal_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_natural/test.json
+      train: ver_global_temporal_shape_natural/train.json
+      vali: ver_global_temporal_shape_natural/vali.json
+    version: ver_global_temporal_shape_natural
+  Electricity/ver_global_temporal_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_structured/test.json
+      train: ver_global_temporal_shape_structured/train.json
+      vali: ver_global_temporal_shape_structured/vali.json
+    version: ver_global_temporal_shape_structured
+  Electricity/ver_global_volatility_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_volatility_natural/test.json
+      train: ver_global_volatility_natural/train.json
+      vali: ver_global_volatility_natural/vali.json
+    version: ver_global_volatility_natural
+  Electricity/ver_global_volatility_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_volatility_structured/test.json
+      train: ver_global_volatility_structured/train.json
+      vali: ver_global_volatility_structured/vali.json
+    version: ver_global_volatility_structured
+  Electricity/ver_shape_temporal_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_natural/test.json
+      train: ver_shape_temporal_shape_natural/train.json
+      vali: ver_shape_temporal_shape_natural/vali.json
+    version: ver_shape_temporal_shape_natural
+  Electricity/ver_shape_temporal_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_structured/test.json
+      train: ver_shape_temporal_shape_structured/train.json
+      vali: ver_shape_temporal_shape_structured/vali.json
+    version: ver_shape_temporal_shape_structured
+  Electricity/ver_volatility_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_shape_natural/test.json
+      train: ver_volatility_shape_natural/train.json
+      vali: ver_volatility_shape_natural/vali.json
+    version: ver_volatility_shape_natural
+  Electricity/ver_volatility_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_shape_structured/test.json
+      train: ver_volatility_shape_structured/train.json
+      vali: ver_volatility_shape_structured/vali.json
+    version: ver_volatility_shape_structured
+  Electricity/ver_volatility_temporal_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_temporal_shape_natural/test.json
+      train: ver_volatility_temporal_shape_natural/train.json
+      vali: ver_volatility_temporal_shape_natural/vali.json
+    version: ver_volatility_temporal_shape_natural
+  Electricity/ver_volatility_temporal_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_temporal_shape_structured/test.json
+      train: ver_volatility_temporal_shape_structured/train.json
+      vali: ver_volatility_temporal_shape_structured/vali.json
+    version: ver_volatility_temporal_shape_structured
+  Electricity/ver_global_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Electricity/ver_global_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Electricity/ver_global_temporal_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape/test.json
+      train: ver_global_temporal_shape/train.json
+      vali: ver_global_temporal_shape/vali.json
+    version: ver_global_temporal_shape
+  Electricity/ver_global_temporal_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape/test.json
+      train: ver_global_temporal_shape/train.json
+      vali: ver_global_temporal_shape/vali.json
+    version: ver_global_temporal_shape
+  Electricity/ver_global_volatility_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Electricity/ver_global_volatility_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Electricity/ver_shape_temporal_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape/test.json
+      train: ver_shape_temporal_shape/train.json
+      vali: ver_shape_temporal_shape/vali.json
+    version: ver_shape_temporal_shape
+  Electricity/ver_shape_temporal_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape/test.json
+      train: ver_shape_temporal_shape/train.json
+      vali: ver_shape_temporal_shape/vali.json
+    version: ver_shape_temporal_shape
+  Electricity/ver_volatility_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Electricity/ver_volatility_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Electricity/ver_volatility_temporal_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_temporal_shape/test.json
+      train: ver_volatility_temporal_shape/train.json
+      vali: ver_volatility_temporal_shape/vali.json
+    version: ver_volatility_temporal_shape
+  Electricity/ver_volatility_temporal_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_volatility_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_volatility_temporal_shape/test.json
+      train: ver_volatility_temporal_shape/train.json
+      vali: ver_volatility_temporal_shape/vali.json
+    version: ver_volatility_temporal_shape
+  Electricity/ver_global_shape_temporal_shape_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Electricity/ver_global_shape_temporal_shape_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Electricity/ver_global_shape_volatility_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Electricity/ver_global_shape_volatility_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Electricity/ver_global_temporal_shape_volatility_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Electricity/ver_global_temporal_shape_volatility_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Electricity/ver_shape_temporal_shape_volatility_avg:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Electricity/ver_shape_temporal_shape_volatility_max:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Electricity/ver_global_shape_temporal_shape_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_temporal_shape_natural/test.json
+      train: ver_global_shape_temporal_shape_natural/train.json
+      vali: ver_global_shape_temporal_shape_natural/vali.json
+    version: ver_global_shape_temporal_shape_natural
+  Electricity/ver_global_shape_temporal_shape_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_temporal_shape_structured/test.json
+      train: ver_global_shape_temporal_shape_structured/train.json
+      vali: ver_global_shape_temporal_shape_structured/vali.json
+    version: ver_global_shape_temporal_shape_structured
+  Electricity/ver_global_shape_volatility_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_volatility_natural/test.json
+      train: ver_global_shape_volatility_natural/train.json
+      vali: ver_global_shape_volatility_natural/vali.json
+    version: ver_global_shape_volatility_natural
+  Electricity/ver_global_shape_volatility_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_volatility_structured/test.json
+      train: ver_global_shape_volatility_structured/train.json
+      vali: ver_global_shape_volatility_structured/vali.json
+    version: ver_global_shape_volatility_structured
+  Electricity/ver_global_temporal_shape_volatility_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_volatility_natural/test.json
+      train: ver_global_temporal_shape_volatility_natural/train.json
+      vali: ver_global_temporal_shape_volatility_natural/vali.json
+    version: ver_global_temporal_shape_volatility_natural
+  Electricity/ver_global_temporal_shape_volatility_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_volatility_structured/test.json
+      train: ver_global_temporal_shape_volatility_structured/train.json
+      vali: ver_global_temporal_shape_volatility_structured/vali.json
+    version: ver_global_temporal_shape_volatility_structured
+  Electricity/ver_shape_temporal_shape_volatility_natural:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_volatility_natural/test.json
+      train: ver_shape_temporal_shape_volatility_natural/train.json
+      vali: ver_shape_temporal_shape_volatility_natural/vali.json
+    version: ver_shape_temporal_shape_volatility_natural
+  Electricity/ver_shape_temporal_shape_volatility_structured:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_volatility_structured/test.json
+      train: ver_shape_temporal_shape_volatility_structured/train.json
+      vali: ver_shape_temporal_shape_volatility_structured/vali.json
+    version: ver_shape_temporal_shape_volatility_structured
+  FNSPID/ver_global_shape_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_natural/test.json
+      train: ver_global_shape_natural/train.json
+      vali: ver_global_shape_natural/vali.json
+    version: ver_global_shape_natural
+  FNSPID/ver_global_temporal_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_natural/test.json
+      train: ver_global_temporal_natural/train.json
+      vali: ver_global_temporal_natural/vali.json
+    version: ver_global_temporal_natural
+  FNSPID/ver_global_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_volatility_natural/test.json
+      train: ver_global_volatility_natural/train.json
+      vali: ver_global_volatility_natural/vali.json
+    version: ver_global_volatility_natural
+  FNSPID/ver_shape_temporal_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_natural/test.json
+      train: ver_shape_temporal_natural/train.json
+      vali: ver_shape_temporal_natural/vali.json
+    version: ver_shape_temporal_natural
+  FNSPID/ver_shape_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility_natural/test.json
+      train: ver_shape_volatility_natural/train.json
+      vali: ver_shape_volatility_natural/vali.json
+    version: ver_shape_volatility_natural
+  FNSPID/ver_temporal_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_temporal_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility_natural/test.json
+      train: ver_temporal_volatility_natural/train.json
+      vali: ver_temporal_volatility_natural/vali.json
+    version: ver_temporal_volatility_natural
+  FNSPID/ver_global_shape_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_structured/test.json
+      train: ver_global_shape_structured/train.json
+      vali: ver_global_shape_structured/vali.json
+    version: ver_global_shape_structured
+  FNSPID/ver_global_temporal_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_structured/test.json
+      train: ver_global_temporal_structured/train.json
+      vali: ver_global_temporal_structured/vali.json
+    version: ver_global_temporal_structured
+  FNSPID/ver_global_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_volatility_structured/test.json
+      train: ver_global_volatility_structured/train.json
+      vali: ver_global_volatility_structured/vali.json
+    version: ver_global_volatility_structured
+  FNSPID/ver_shape_temporal_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_structured/test.json
+      train: ver_shape_temporal_structured/train.json
+      vali: ver_shape_temporal_structured/vali.json
+    version: ver_shape_temporal_structured
+  FNSPID/ver_shape_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility_structured/test.json
+      train: ver_shape_volatility_structured/train.json
+      vali: ver_shape_volatility_structured/vali.json
+    version: ver_shape_volatility_structured
+  FNSPID/ver_temporal_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_temporal_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility_structured/test.json
+      train: ver_temporal_volatility_structured/train.json
+      vali: ver_temporal_volatility_structured/vali.json
+    version: ver_temporal_volatility_structured
+  FNSPID/ver_global_temporal_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal/test.json
+      train: ver_global_temporal/train.json
+      vali: ver_global_temporal/vali.json
+    version: ver_global_temporal
+  FNSPID/ver_global_temporal_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal/test.json
+      train: ver_global_temporal/train.json
+      vali: ver_global_temporal/vali.json
+    version: ver_global_temporal
+  FNSPID/ver_global_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  FNSPID/ver_global_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  FNSPID/ver_shape_temporal_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal/test.json
+      train: ver_shape_temporal/train.json
+      vali: ver_shape_temporal/vali.json
+    version: ver_shape_temporal
+  FNSPID/ver_shape_temporal_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal/test.json
+      train: ver_shape_temporal/train.json
+      vali: ver_shape_temporal/vali.json
+    version: ver_shape_temporal
+  FNSPID/ver_shape_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility/test.json
+      train: ver_shape_volatility/train.json
+      vali: ver_shape_volatility/vali.json
+    version: ver_shape_volatility
+  FNSPID/ver_shape_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_volatility/test.json
+      train: ver_shape_volatility/train.json
+      vali: ver_shape_volatility/vali.json
+    version: ver_shape_volatility
+  FNSPID/ver_global_shape_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  FNSPID/ver_global_shape_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  FNSPID/ver_temporal_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_temporal_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility/test.json
+      train: ver_temporal_volatility/train.json
+      vali: ver_temporal_volatility/vali.json
+    version: ver_temporal_volatility
+  FNSPID/ver_temporal_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_temporal_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_temporal_volatility/test.json
+      train: ver_temporal_volatility/train.json
+      vali: ver_temporal_volatility/vali.json
+    version: ver_temporal_volatility
+  FNSPID/ver_global_shape_temporal_shape_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  FNSPID/ver_global_shape_temporal_shape_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  FNSPID/ver_global_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  FNSPID/ver_synchronized_global_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_synchronized_global_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_synchronized_global_shape_volatility/test.json
+      train: ver_synchronized_global_shape_volatility/train.json
+      vali: ver_synchronized_global_shape_volatility/vali.json
+    version: ver_synchronized_global_shape_volatility
+  FNSPID/ver_global_shape_temporal_shape:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  FNSPID/ver_synchronized_global_shape_temporal_shape:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_synchronized_global_shape_temporal_shape/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_synchronized_global_shape_temporal_shape/test.json
+      train: ver_synchronized_global_shape_temporal_shape/train.json
+      vali: ver_synchronized_global_shape_temporal_shape/vali.json
+    version: ver_synchronized_global_shape_temporal_shape
+  FNSPID/ver_global_temporal_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  FNSPID/ver_synchronized_global_temporal_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_synchronized_global_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_synchronized_global_temporal_shape_volatility/test.json
+      train: ver_synchronized_global_temporal_shape_volatility/train.json
+      vali: ver_synchronized_global_temporal_shape_volatility/vali.json
+    version: ver_synchronized_global_temporal_shape_volatility
+  FNSPID/ver_shape_temporal_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  FNSPID/ver_synchronized_shape_temporal_shape_volatility:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_synchronized_shape_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/FNSPID
+    splits:
+      test: ver_synchronized_shape_temporal_shape_volatility/test.json
+      train: ver_synchronized_shape_temporal_shape_volatility/train.json
+      vali: ver_synchronized_shape_temporal_shape_volatility/vali.json
+    version: ver_synchronized_shape_temporal_shape_volatility
+  FNSPID/ver_global_shape_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  FNSPID/ver_global_shape_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  FNSPID/ver_global_temporal_shape_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  FNSPID/ver_global_temporal_shape_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  FNSPID/ver_shape_temporal_shape_volatility_avg:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  FNSPID/ver_shape_temporal_shape_volatility_max:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  FNSPID/ver_global_shape_temporal_shape_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_temporal_shape_natural/test.json
+      train: ver_global_shape_temporal_shape_natural/train.json
+      vali: ver_global_shape_temporal_shape_natural/vali.json
+    version: ver_global_shape_temporal_shape_natural
+  FNSPID/ver_global_shape_temporal_shape_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_temporal_shape_structured/test.json
+      train: ver_global_shape_temporal_shape_structured/train.json
+      vali: ver_global_shape_temporal_shape_structured/vali.json
+    version: ver_global_shape_temporal_shape_structured
+  FNSPID/ver_global_shape_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_volatility_natural/test.json
+      train: ver_global_shape_volatility_natural/train.json
+      vali: ver_global_shape_volatility_natural/vali.json
+    version: ver_global_shape_volatility_natural
+  FNSPID/ver_global_shape_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_shape_volatility_structured/test.json
+      train: ver_global_shape_volatility_structured/train.json
+      vali: ver_global_shape_volatility_structured/vali.json
+    version: ver_global_shape_volatility_structured
+  FNSPID/ver_global_temporal_shape_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_shape_volatility_natural/test.json
+      train: ver_global_temporal_shape_volatility_natural/train.json
+      vali: ver_global_temporal_shape_volatility_natural/vali.json
+    version: ver_global_temporal_shape_volatility_natural
+  FNSPID/ver_global_temporal_shape_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_global_temporal_shape_volatility_structured/test.json
+      train: ver_global_temporal_shape_volatility_structured/train.json
+      vali: ver_global_temporal_shape_volatility_structured/vali.json
+    version: ver_global_temporal_shape_volatility_structured
+  FNSPID/ver_shape_temporal_shape_volatility_natural:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_shape_volatility_natural/test.json
+      train: ver_shape_temporal_shape_volatility_natural/train.json
+      vali: ver_shape_temporal_shape_volatility_natural/vali.json
+    version: ver_shape_temporal_shape_volatility_natural
+  FNSPID/ver_shape_temporal_shape_volatility_structured:
+    dataset_name: FNSPID
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/FNSPID
+    splits:
+      test: ver_shape_temporal_shape_volatility_structured/test.json
+      train: ver_shape_temporal_shape_volatility_structured/train.json
+      vali: ver_shape_temporal_shape_volatility_structured/vali.json
+    version: ver_shape_temporal_shape_volatility_structured
+  Bitcoin/ver_global_shape_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_natural/test.json
+      train: ver_global_shape_natural/train.json
+      vali: ver_global_shape_natural/vali.json
+    version: ver_global_shape_natural
+  Bitcoin/ver_global_shape_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_structured/test.json
+      train: ver_global_shape_structured/train.json
+      vali: ver_global_shape_structured/vali.json
+    version: ver_global_shape_structured
+  Bitcoin/ver_global_temporal_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_natural/test.json
+      train: ver_global_temporal_natural/train.json
+      vali: ver_global_temporal_natural/vali.json
+    version: ver_global_temporal_natural
+  Bitcoin/ver_global_temporal_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_structured/test.json
+      train: ver_global_temporal_structured/train.json
+      vali: ver_global_temporal_structured/vali.json
+    version: ver_global_temporal_structured
+  Bitcoin/ver_global_volatility_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_volatility_natural/test.json
+      train: ver_global_volatility_natural/train.json
+      vali: ver_global_volatility_natural/vali.json
+    version: ver_global_volatility_natural
+  Bitcoin/ver_global_volatility_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_volatility_structured/test.json
+      train: ver_global_volatility_structured/train.json
+      vali: ver_global_volatility_structured/vali.json
+    version: ver_global_volatility_structured
+  Bitcoin/ver_temporal_shape_shape_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_temporal_shape_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_temporal_shape_shape_natural/test.json
+      train: ver_temporal_shape_shape_natural/train.json
+      vali: ver_temporal_shape_shape_natural/vali.json
+    version: ver_temporal_shape_shape_natural
+  Bitcoin/ver_temporal_shape_shape_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_temporal_shape_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_temporal_shape_shape_structured/test.json
+      train: ver_temporal_shape_shape_structured/train.json
+      vali: ver_temporal_shape_shape_structured/vali.json
+    version: ver_temporal_shape_shape_structured
+  Bitcoin/ver_volatility_shape_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_shape_natural/test.json
+      train: ver_volatility_shape_natural/train.json
+      vali: ver_volatility_shape_natural/vali.json
+    version: ver_volatility_shape_natural
+  Bitcoin/ver_volatility_shape_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_shape_structured/test.json
+      train: ver_volatility_shape_structured/train.json
+      vali: ver_volatility_shape_structured/vali.json
+    version: ver_volatility_shape_structured
+  Bitcoin/ver_volatility_temporal_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_temporal_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_temporal_natural/test.json
+      train: ver_volatility_temporal_natural/train.json
+      vali: ver_volatility_temporal_natural/vali.json
+    version: ver_volatility_temporal_natural
+  Bitcoin/ver_volatility_temporal_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_temporal_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_temporal_structured/test.json
+      train: ver_volatility_temporal_structured/train.json
+      vali: ver_volatility_temporal_structured/vali.json
+    version: ver_volatility_temporal_structured
+  Bitcoin/ver_global_shape_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Bitcoin/ver_global_shape_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape/test.json
+      train: ver_global_shape/train.json
+      vali: ver_global_shape/vali.json
+    version: ver_global_shape
+  Bitcoin/ver_global_temporal_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal/test.json
+      train: ver_global_temporal/train.json
+      vali: ver_global_temporal/vali.json
+    version: ver_global_temporal
+  Bitcoin/ver_global_temporal_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal/test.json
+      train: ver_global_temporal/train.json
+      vali: ver_global_temporal/vali.json
+    version: ver_global_temporal
+  Bitcoin/ver_global_volatility_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Bitcoin/ver_global_volatility_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_volatility/test.json
+      train: ver_global_volatility/train.json
+      vali: ver_global_volatility/vali.json
+    version: ver_global_volatility
+  Bitcoin/ver_temporal_shape_shape_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_temporal_shape_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_temporal_shape_shape/test.json
+      train: ver_temporal_shape_shape/train.json
+      vali: ver_temporal_shape_shape/vali.json
+    version: ver_temporal_shape_shape
+  Bitcoin/ver_temporal_shape_shape_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_temporal_shape_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_temporal_shape_shape/test.json
+      train: ver_temporal_shape_shape/train.json
+      vali: ver_temporal_shape_shape/vali.json
+    version: ver_temporal_shape_shape
+  Bitcoin/ver_volatility_shape_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Bitcoin/ver_volatility_shape_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_shape/test.json
+      train: ver_volatility_shape/train.json
+      vali: ver_volatility_shape/vali.json
+    version: ver_volatility_shape
+  Bitcoin/ver_volatility_temporal_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_temporal/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_temporal/test.json
+      train: ver_volatility_temporal/train.json
+      vali: ver_volatility_temporal/vali.json
+    version: ver_volatility_temporal
+  Bitcoin/ver_volatility_temporal_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_volatility_temporal/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_volatility_temporal/test.json
+      train: ver_volatility_temporal/train.json
+      vali: ver_volatility_temporal/vali.json
+    version: ver_volatility_temporal
+  Bitcoin/ver_global_shape_temporal_shape_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Bitcoin/ver_global_shape_temporal_shape_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Bitcoin/ver_global_shape_volatility_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Bitcoin/ver_global_shape_volatility_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Bitcoin/ver_global_temporal_shape_volatility_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Bitcoin/ver_global_temporal_shape_volatility_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Bitcoin/ver_shape_temporal_shape_volatility_avg:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_avg.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Bitcoin/ver_shape_temporal_shape_volatility_max:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/embeddings_max.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility
+  Bitcoin/ver_global_shape_temporal_shape_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_temporal_shape_natural/test.json
+      train: ver_global_shape_temporal_shape_natural/train.json
+      vali: ver_global_shape_temporal_shape_natural/vali.json
+    version: ver_global_shape_temporal_shape_natural
+  Bitcoin/ver_global_shape_temporal_shape_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_temporal_shape_structured/test.json
+      train: ver_global_shape_temporal_shape_structured/train.json
+      vali: ver_global_shape_temporal_shape_structured/vali.json
+    version: ver_global_shape_temporal_shape_structured
+  Bitcoin/ver_global_shape_volatility_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_volatility_natural/test.json
+      train: ver_global_shape_volatility_natural/train.json
+      vali: ver_global_shape_volatility_natural/vali.json
+    version: ver_global_shape_volatility_natural
+  Bitcoin/ver_global_shape_volatility_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_shape_volatility_structured/test.json
+      train: ver_global_shape_volatility_structured/train.json
+      vali: ver_global_shape_volatility_structured/vali.json
+    version: ver_global_shape_volatility_structured
+  Bitcoin/ver_global_temporal_shape_volatility_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_shape_volatility_natural/test.json
+      train: ver_global_temporal_shape_volatility_natural/train.json
+      vali: ver_global_temporal_shape_volatility_natural/vali.json
+    version: ver_global_temporal_shape_volatility_natural
+  Bitcoin/ver_global_temporal_shape_volatility_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_global_temporal_shape_volatility_structured/test.json
+      train: ver_global_temporal_shape_volatility_structured/train.json
+      vali: ver_global_temporal_shape_volatility_structured/vali.json
+    version: ver_global_temporal_shape_volatility_structured
+  Bitcoin/ver_shape_temporal_shape_volatility_natural:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_natural/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_shape_temporal_shape_volatility_natural/test.json
+      train: ver_shape_temporal_shape_volatility_natural/train.json
+      vali: ver_shape_temporal_shape_volatility_natural/vali.json
+    version: ver_shape_temporal_shape_volatility_natural
+  Bitcoin/ver_shape_temporal_shape_volatility_structured:
+    dataset_name: Bitcoin
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility_structured/embedding_qwen/all_embeddings.pt
+        splits:
+          test: test_news
+          train: train_news
+          vali: vali_news
+    root: dataset/Bitcoin
+    splits:
+      test: ver_shape_temporal_shape_volatility_structured/test.json
+      train: ver_shape_temporal_shape_volatility_structured/train.json
+      vali: ver_shape_temporal_shape_volatility_structured/vali.json
+    version: ver_shape_temporal_shape_volatility_structured
+  Electricity/ver_synchronized_global_shape_temporal_shape:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_synchronized_global_shape_temporal_shape/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_synchronized_global_shape_temporal_shape/test.json
+      train: ver_synchronized_global_shape_temporal_shape/train.json
+      vali: ver_synchronized_global_shape_temporal_shape/vali.json
+    version: ver_synchronized_global_shape_temporal_shape
+  Electricity/ver_synchronized_global_temporal_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_synchronized_global_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_synchronized_global_temporal_shape_volatility/test.json
+      train: ver_synchronized_global_temporal_shape_volatility/train.json
+      vali: ver_synchronized_global_temporal_shape_volatility/vali.json
+    version: ver_synchronized_global_temporal_shape_volatility
+  Electricity/ver_synchronized_global_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_synchronized_global_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_synchronized_global_shape_volatility/test.json
+      train: ver_synchronized_global_shape_volatility/train.json
+      vali: ver_synchronized_global_shape_volatility/vali.json
+    version: ver_synchronized_global_shape_volatility
+  Electricity/ver_synchronized_shape_temporal_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_synchronized_shape_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_synchronized_shape_temporal_shape_volatility/test.json
+      train: ver_synchronized_shape_temporal_shape_volatility/train.json
+      vali: ver_synchronized_shape_temporal_shape_volatility/vali.json
+    version: ver_synchronized_shape_temporal_shape_volatility
+  Electricity/ver_global_shape_temporal_shape:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_temporal_shape/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_temporal_shape/test.json
+      train: ver_global_shape_temporal_shape/train.json
+      vali: ver_global_shape_temporal_shape/vali.json
+    version: ver_global_shape_temporal_shape
+  Electricity/ver_global_temporal_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_global_temporal_shape_volatility/test.json
+      train: ver_global_temporal_shape_volatility/train.json
+      vali: ver_global_temporal_shape_volatility/vali.json
+    version: ver_global_temporal_shape_volatility
+  Electricity/ver_global_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_global_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_global_shape_volatility/test.json
+      train: ver_global_shape_volatility/train.json
+      vali: ver_global_shape_volatility/vali.json
+    version: ver_global_shape_volatility
+  Electricity/ver_shape_temporal_shape_volatility:
+    dataset_name: Electricity
+    embeddings:
+      news:
+        path: ver_shape_temporal_shape_volatility/embedding_qwen/all_token_embeddings.pt
+        splits:
+          test: test
+          train: train
+          vali: vali
+    root: dataset/Electricity
+    splits:
+      test: ver_shape_temporal_shape_volatility/test.json
+      train: ver_shape_temporal_shape_volatility/train.json
+      vali: ver_shape_temporal_shape_volatility/vali.json
+    version: ver_shape_temporal_shape_volatility

@@ -1,0 +1,21 @@
+learning_rate: [0.001, 0.0005, 0.0001]
+embedding_size: 512
+codebook_dim: 256
+depth: 10
+num_envs: 50
+dropout: 0.1
+meta_drop: 0.2
+sudden_drop: 0.2
+fuse_drop: 0.1
+e_layers: 1
+enc_in: 1
+embed: timeF
+text_emb_dim: 4096
+beta1: 0.2
+beta2: 0.0
+use_multimodal: true
+use_text_news: false
+use_news_embedding: true
+requires_news_embedding: true
+inverse: False
+hyper_parameters: ["learning_rate", "codebook_dim", "num_envs"]

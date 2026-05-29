@@ -1,0 +1,15 @@
+dropout: 0.1
+e_layers: 2
+factor: [1,3]
+d_layers: 1
+inner_size: 5
+# 在模型内部，self.window_size = [4,4] 这是bitcoin上的设置，在electricity和原来的为[4,4]
+n_heads: 4
+learning_rate: [0.0005,0.0001,0.00005]
+embedding_size: 512
+use_multimodal : False
+inverse : False
+enc_in: 1
+c_out: 1
+itr: 1
+hyper_parameters: ["learning_rate","factor"]

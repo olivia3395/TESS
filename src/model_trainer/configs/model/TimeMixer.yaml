@@ -1,0 +1,55 @@
+# e_layers: [2,3]
+# down_sampling_layers: 3
+# down_sampling_window: 1
+# learning_rate: [0.0005,0.0001,0.00005]
+# # d_model: 32
+# # d_ff: 32
+# embedding_size: 512
+
+# enc_in: 1
+# c_out: 1
+# itr: 1
+# down_sampling_method: avg
+# use_multimodal : False
+# inverse : False
+
+# # Additional parameters that might be useful
+# dropout: 0.1
+# n_heads: [2,4,8]
+# activation: gelu
+# train_epochs: 10
+# patience: 3
+# use_amp: True
+# decomp_method: 'moving_avg'
+# moving_avg: 25 #window size of moving average
+
+
+# hyper_parameters: ["learning_rate","n_heads","e_layers"]
+
+e_layers: [2]
+down_sampling_layers: 3
+down_sampling_window: 1
+learning_rate: [0.0005]
+# d_model: 32
+# d_ff: 32
+embedding_size: 512
+
+enc_in: 1
+c_out: 1
+itr: 1
+down_sampling_method: avg
+use_multimodal : False
+inverse : False
+
+# Additional parameters that might be useful
+dropout: 0.1
+n_heads: [8]
+activation: gelu
+train_epochs: 10
+patience: 3
+use_amp: True
+decomp_method: 'moving_avg'
+moving_avg: 25 #window size of moving average
+
+
+hyper_parameters: ["learning_rate","n_heads","e_layers"]

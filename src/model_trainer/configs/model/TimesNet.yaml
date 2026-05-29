@@ -1,0 +1,31 @@
+e_layers: 2
+d_layers: 1
+factor: 3
+# learning_rate: [0.0005,0.0001,0.00005]
+learning_rate: [0.0005]
+
+# d_model: 32
+# d_ff: 32
+embedding_size: 512
+# #由于traffic的窗口为4，太短。输入序列长度T只有8，FFT只能检测到4个有效周期，改成4
+# top_k: 4
+top_k: 5
+
+enc_in: 1
+dec_in: 1
+c_out: 1
+itr: 1
+use_multimodal : False
+inverse : False
+num_kernels: 6 #for Inception
+
+# Additional parameters that might be useful
+dropout: 0.1
+n_heads: 8
+activation: gelu
+train_epochs: 10
+patience: 3
+use_amp: True
+
+
+hyper_parameters: ["learning_rate"]

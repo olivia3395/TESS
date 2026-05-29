@@ -1,0 +1,18 @@
+
+llm_model: llama
+llm_model_name: llama # HuggingFace model name (e.g., gpt2, gpt2-medium, huggyllama/llama-7b)
+d_model: 512
+d_ff: 512 
+# learning_rate: [0.01]
+learning_rate: [0.0005,0.0001,0.00005]
+content: "Please Electricity load demand"
+llm_layers: [32]
+llm_dim: 768
+prompt_domain: True
+dropout: 0.1
+top_k: 3 #正常是5，traffic,fnspid太小，用3
+n_heads: [4]
+inverse: True
+use_multimodal: True
+
+hyper_parameters: ["llm_layers","n_heads","learning_rate"]
