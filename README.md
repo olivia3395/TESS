@@ -36,7 +36,7 @@
 
 </div>
 
----
+
 
 ## 📌 What is TESS?
 
@@ -76,7 +76,7 @@ Primitives condition forecasting as prefix tokens.
 </table>
 </div>
 
----
+
 
 ## 🏗️ Method
 
@@ -111,7 +111,6 @@ TESS operates in three stages:
 
 **③ Primitives → Forecast** &nbsp;—&nbsp; Gated primitive embeddings are prepended as **semantic prefix tokens** alongside patch embeddings inside a Transformer. Semantic signals participate in every attention layer. The full model trains end-to-end with a joint forecasting + gating loss (LLM frozen).
 
----
 
 ## 🚀 Quick Start
 
@@ -125,41 +124,9 @@ pip install numpy pandas scikit-learn einops
 pip install -r requirements.txt
 ```
 
-### Offline Primitive Extraction
 
-Primitive extraction is a one-time preprocessing step — the forecaster consumes only compact labels at training/inference time.
 
-```bash
-python extract_primitives.py \
-  --dataset     FNSPID        \
-  --llm_model   Qwen3-8B      \
-  --output_path ../dataset/primitives/
-```
-
-### Run Experiments
-
-```bash
-# Unimodal baseline (no text)
-sh run_baseline.sh
-
-# Direct text fusion baseline
-python run_direct_fusion.py --dataset FNSPID --epoch 100 --log_screen True
-
-# ⭐ TESS
-python run_tess.py \
-  --dataset    FNSPID    \
-  --use_tess   True      \
-  --use_gating True      \
-  --llm_model  Qwen3-8B  \
-  --epoch      100       \
-  --data_path  ../dataset/
-```
-
-> 💡 Add `--use_cv True` to automatically select hyperparameters via cross-validation.
-
----
-
-## ⚙️ Hyperparameters
+## Hyperparameters
 
 | Parameter | Description | Default |
 |:---|:---|:---:|
@@ -174,30 +141,8 @@ python run_tess.py \
 | `--patience` | Early stopping patience | `10` |
 | `--llm_model` | LLM backbone for extraction | `Qwen3-8B` |
 
----
 
-## 📎 Citation
 
-```bibtex
-@inproceedings{li2026tess,
-  title     = {From Text to Forecasts: Bridging Modality Gap with Temporal Evolution Semantic Space},
-  author    = {Li, Lehui and Wang, Yuyao and Yan, Jisheng and Zhang, Wei and
-               Deng, Jinliang and Sun, Haoliang and Han, Zhongyi and Gong, Yongshun},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
-  year      = {2026}
-}
-```
-
----
-
-## 📬 Contact
-
-Have questions or want to collaborate? Reach out to the corresponding authors:
-
-&nbsp;&nbsp;✉️ &nbsp;**Jinliang Deng** — `jinliangdeng9588@gmail.com`  
-&nbsp;&nbsp;✉️ &nbsp;**Yongshun Gong** — `ysgong@sdu.edu.cn`
-
----
 
 <div align="center">
 <sub>
