@@ -108,7 +108,7 @@ TESS operates in three stages:
 
 **② Text → Primitives** &nbsp;—&nbsp; A frozen LLM classifies each primitive from input text under a structured prompt. A **confidence-aware gating network** estimates extraction reliability from the LLM's own probability margin, softly suppressing unreliable primitives at inference time.
 
-**③ Primitives → Forecast** &nbsp;—&nbsp; Gated primitive embeddings are prepended as **semantic prefix tokens** alongside patch embeddings inside a Transformer. Semantic signals participate in every attention layer. The full model trains end-to-end with a joint forecasting + gating loss (LLM frozen).
+**③ Primitives → Forecast** &nbsp;—&nbsp; Gated primitive embeddings are prepended as **semantic prefix tokens** alongside patch embeddings inside a Transformer. Semantic signals participate in every attention layer. The full model trains end-to-end with a joint forecasting + gating loss.
 
 
 ## 🚀 Quick Start
@@ -147,6 +147,6 @@ pip install -r requirements.txt
 <sub>
 ⭐ If you find TESS useful, please consider starring the repo!
 <br/><br/>
-<i>ICML 2026 Oral · Shandong University · Boston University · Beihang University</i>
+<i>ICML 2026 Oral </i>
 </sub>
 </div>
