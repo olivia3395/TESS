@@ -59,14 +59,15 @@ We define four **Temporal Semantic Primitives (TSPs)** — each verifiable from 
 
 <div align="center">
 
-| Primitive | What It Captures | Example Labels |
-|:---|:---|:---|
-| **Distribution Shift** | Mean level change between history and forecast | `STRONG-RISE` · `MILD-RISE` · `STABLE` · `MILD-DROP` · `STRONG-DROP` |
-| **Volatility Shift** | Change in variance / fluctuation intensity | `STRONG-RISE` · `MILD-RISE` · `STABLE` · `MILD-DROP` · `STRONG-DROP` |
-| **Shape** | Overall morphology of the forecast trajectory | `ASCEND` · `DESCEND` · `PEAK` · `TROUGH` · `OSCILLATE` |
-| **Lag & Decay** | When the event impact begins and how long it lasts | `EARLY-FADE` · `EARLY-PERSIST` · `MID-FADE` · `MID-PERSIST` · `LATE` · `DIFFUSE` |
+| Challenge | TESS's Solution |
+|:---|:---|
+| Models over-attend to redundant text tokens | Distill text into compact temporal primitives |
+| Qualitative language resists numerical decoding | Define numerically grounded primitives (shift, volatility, shape, lag) |
+| LLM extraction can be noisy | Confidence-aware gating suppresses unreliable primitives |
+| Direct fusion leads to unstable training | Semantic prefix tokens enable smooth, fast convergence |
 
 </div>
+
 
 ### Stage 2 · Text → Temporal Semantic Primitives
 
@@ -81,10 +82,6 @@ Gated primitive embeddings are prepended as **semantic prefix tokens** to the pa
 ##  Quick Start
 
 ### Installation
-
-
-
-> **Datasets** are available via the project repository. Place them under `../dataset/` or configure `--data_path` accordingly.
 
 ### Running Experiments
 
