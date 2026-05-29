@@ -123,9 +123,9 @@ pip install numpy pandas scikit-learn einops
 pip install -r requirements.txt
 ```
 
-## Hyperparameters
 
-<table>
+
+<!-- <table>
   <thead>
     <tr>
       <th align="left">Parameter</th>
@@ -145,7 +145,7 @@ pip install -r requirements.txt
     <tr><td><code>--patience</code></td><td>Early stopping patience</td><td align="center"><code>10</code></td></tr>
     <tr><td><code>--llm_model</code></td><td>LLM backbone for extraction</td><td align="center"><code>Qwen3-8B</code></td></tr>
   </tbody>
-</table>
+</table> -->
 
 
 
