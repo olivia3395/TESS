@@ -113,6 +113,41 @@ TESS operates in three stages:
 
 ## 🚀 Quick Start
 
+### Installation
+
+```bash
+git clone https://github.com/olivia3395/TESS.git && cd TESS
+
+pip install torch>=2.0.0 transformers accelerate
+pip install numpy pandas scikit-learn einops
+pip install -r requirements.txt
+```
+
+## Hyperparameters
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Parameter</th>
+      <th align="left">Description</th>
+      <th align="center">Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>--lambda_gate</code></td><td>Gating supervision loss weight</td><td align="center"><code>0.1</code></td></tr>
+    <tr><td><code>--temperature</code></td><td>LLM softmax temperature</td><td align="center"><code>1.0</code></td></tr>
+    <tr><td><code>--patch_len</code></td><td>Patch length</td><td align="center"><code>16</code></td></tr>
+    <tr><td><code>--stride</code></td><td>Patch stride</td><td align="center"><code>8</code></td></tr>
+    <tr><td><code>--d_model</code></td><td>Transformer hidden dimension</td><td align="center"><code>128</code></td></tr>
+    <tr><td><code>--n_heads</code></td><td>Attention heads</td><td align="center"><code>8</code></td></tr>
+    <tr><td><code>--n_layers</code></td><td>Transformer encoder layers</td><td align="center"><code>3</code></td></tr>
+    <tr><td><code>--lr</code></td><td>Learning rate (AdamW)</td><td align="center"><code>1e-4</code></td></tr>
+    <tr><td><code>--patience</code></td><td>Early stopping patience</td><td align="center"><code>10</code></td></tr>
+    <tr><td><code>--llm_model</code></td><td>LLM backbone for extraction</td><td align="center"><code>Qwen3-8B</code></td></tr>
+  </tbody>
+</table>
+
+
 
 <div align="center">
 <sub>
