@@ -1,9 +1,9 @@
 <div align="center">
 
-<picture>
+<!-- <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/tess_logo_dark.png">
   <img alt="TESS" src="assets/tess_logo_light.png" height="80">
-</picture>
+</picture> -->
 
 <h1>TESS</h1>
 <h3>From Text to Forecasts: Bridging Modality Gap with<br/>Temporal Evolution Semantic Space</h3>
@@ -28,7 +28,6 @@
 <b>Lehui Li*</b> &nbsp;·&nbsp; <b>Yuyao Wang*</b> &nbsp;·&nbsp; <b>Jisheng Yan*</b> &nbsp;·&nbsp; Wei Zhang &nbsp;·&nbsp; Jinliang Deng† &nbsp;·&nbsp; Haoliang Sun &nbsp;·&nbsp; Zhongyi Han &nbsp;·&nbsp; Yongshun Gong†
 </p>
 
-<p><sub>Shandong University &nbsp;·&nbsp; Boston University &nbsp;·&nbsp; Beihang University</sub></p>
 
 <br/>
 
@@ -38,7 +37,7 @@
 
 
 
-## 📌 What is TESS?
+## What is TESS?
 
 Real-world time series are constantly disrupted by external events — breaking news, weather shocks, policy announcements, market sentiment. These events leave traces in text *long before* they appear in numbers. Yet existing multimodal forecasters fail to harness this: they feed raw text embeddings directly into numerical models, creating a fundamental **modality gap**.
 
@@ -78,7 +77,7 @@ Primitives condition forecasting as prefix tokens.
 
 
 
-## 🏗️ Method
+## Method
 
 <div align="center">
 <img src="assets/tess_overview.png" width="88%" alt="TESS Overview"/>
