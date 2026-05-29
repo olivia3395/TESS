@@ -48,7 +48,7 @@ Real-world time series are often disrupted by external events — news, weather 
 
 <div align="center">
 <img src="assets/tess_overview.png" width="90%" alt="TESS Overview"/>
-<br/><sub><b>Figure 1:</b> Overview of TESS. Text is distilled into temporal primitives by a frozen LLM, filtered by confidence-aware gating, and injected as semantic prefix tokens into a Transformer forecaster.</sub>
+<!-- <br/><sub><b>Figure 1:</b> Overview of TESS. Text is distilled into temporal primitives by a frozen LLM, filtered by confidence-aware gating, and injected as semantic prefix tokens into a Transformer forecaster.</sub> -->
 </div>
 
 <br/>
