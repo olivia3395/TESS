@@ -18,7 +18,7 @@
 
 <br/>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-ICML_Oral 2026-blue?style=for-the-badge)]([https://arxiv.org](https://arxiv.org/abs/2603.12664))
+[![Paper](https://img.shields.io/badge/📄_Paper-ICML_2026-blue?style=for-the-badge)]([https://arxiv.org](https://arxiv.org/abs/2603.12664))
 [![Code](https://img.shields.io/badge/💻_Code-GitHub-black?style=for-the-badge)](https://github.com/olivia3395/TESS)
 [![Poster](https://img.shields.io/badge/🖼️_Poster-PDF-orange?style=for-the-badge)](#)
 
