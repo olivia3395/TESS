@@ -113,35 +113,6 @@ TESS operates in three stages:
 
 ## 🚀 Quick Start
 
-### Installation
-
-```bash
-git clone https://github.com/olivia3395/TESS.git && cd TESS
-
-pip install torch>=2.0.0 transformers accelerate
-pip install numpy pandas scikit-learn einops
-pip install -r requirements.txt
-```
-
-
-
-## Hyperparameters
-
-| Parameter | Description | Default |
-|:---|:---|:---:|
-| `--lambda_gate` | Gating supervision loss weight | `0.1` |
-| `--temperature` | LLM softmax temperature | `1.0` |
-| `--patch_len` | Patch length | `16` |
-| `--stride` | Patch stride | `8` |
-| `--d_model` | Transformer hidden dimension | `128` |
-| `--n_heads` | Attention heads | `8` |
-| `--n_layers` | Transformer encoder layers | `3` |
-| `--lr` | Learning rate (AdamW) | `1e-4` |
-| `--patience` | Early stopping patience | `10` |
-| `--llm_model` | LLM backbone for extraction | `Qwen3-8B` |
-
-
-
 
 <div align="center">
 <sub>
