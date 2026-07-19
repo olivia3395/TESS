@@ -1,0 +1,52 @@
+{
+  "dataset": "bitcoin",
+  "primitive": "shape",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_patch_diff_quantile",
+    "values": {
+      "tau_shape": 47.370000000000005,
+      "shape_quantile": 0.33
+    },
+    "fit_split": "train",
+    "score_name": "shape_score"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 98,
+      "label_counts": {
+        "Rise": 24,
+        "Fall": 12,
+        "Peak": 20,
+        "Recover": 19,
+        "Oscillate": 23
+      }
+    },
+    "vali": {
+      "num_records": 12,
+      "label_counts": {
+        "Rise": 0,
+        "Fall": 0,
+        "Peak": 4,
+        "Recover": 2,
+        "Oscillate": 6
+      }
+    },
+    "test": {
+      "num_records": 13,
+      "label_counts": {
+        "Rise": 0,
+        "Fall": 0,
+        "Peak": 2,
+        "Recover": 2,
+        "Oscillate": 9
+      }
+    }
+  }
+}

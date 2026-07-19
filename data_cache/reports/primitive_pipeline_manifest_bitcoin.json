@@ -1,0 +1,296 @@
+{
+  "dataset": "bitcoin",
+  "splits": [
+    "train",
+    "vali",
+    "test"
+  ],
+  "primitives": [
+    "distribution_shift",
+    "volatility",
+    "shape",
+    "temporal_influence"
+  ],
+  "stages": [
+    "gt",
+    "gate",
+    "grouped",
+    "audit"
+  ],
+  "backend": "huggingface",
+  "prompt_source": "auto",
+  "num_samples": 4,
+  "limit": null,
+  "seed": 42,
+  "overwrite": false,
+  "start_time": "2026-06-28T10:03:02.756430+00:00",
+  "end_time": "2026-06-28T10:03:02.850714+00:00",
+  "duration_seconds": 0.09430082305334508,
+  "created_or_updated_paths": [
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_bitcoin.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_bitcoin.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_shape_bitcoin.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_bitcoin.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/train.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_bitcoin.json"
+  ],
+  "stage_statuses": [
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_bitcoin.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_bitcoin.json"
+      ],
+      "detail": {
+        "primitive": "volatility"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_shape_bitcoin.json"
+      ],
+      "detail": {
+        "primitive": "shape"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_bitcoin.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_train.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_vali.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_bitcoin_test.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_train.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_vali.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_bitcoin_test.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_train.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_vali.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/shape/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_bitcoin_test.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_train.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_vali.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/bitcoin/temporal_influence/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_bitcoin_test.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "grouped_audit",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/train.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/bitcoin/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_bitcoin.json"
+      ]
+    }
+  ],
+  "skipped_stages_or_files": [],
+  "environment_note": {
+    "conda_default_env": "/data/llh_conda_envs/tslib",
+    "python_executable": "/data/llh_conda_envs/tslib/bin/python"
+  }
+}

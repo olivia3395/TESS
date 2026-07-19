@@ -1,0 +1,438 @@
+{
+  "dataset": "environment",
+  "splits": [
+    "train",
+    "vali",
+    "test"
+  ],
+  "primitives": [
+    "distribution_shift",
+    "volatility",
+    "shape",
+    "temporal_influence"
+  ],
+  "primitive_order": [
+    "distribution_shift",
+    "volatility",
+    "shape",
+    "temporal_influence"
+  ],
+  "grouped_gate_record_counts": {
+    "train": 1108,
+    "vali": 237,
+    "test": 239
+  },
+  "flat_gate_record_counts": {
+    "train": {
+      "distribution_shift": 1108,
+      "volatility": 1108,
+      "shape": 1108,
+      "temporal_influence": 1108
+    },
+    "vali": {
+      "distribution_shift": 237,
+      "volatility": 237,
+      "shape": 237,
+      "temporal_influence": 237
+    },
+    "test": {
+      "distribution_shift": 239,
+      "volatility": 239,
+      "shape": 239,
+      "temporal_influence": 239
+    }
+  },
+  "flat_gate_audit": {
+    "train": {
+      "distribution_shift": {
+        "record_count": 1108,
+        "num_positive_gate_target": 271,
+        "num_negative_gate_target": 837,
+        "positive_rate": 0.24458483754512636,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9952617328519856,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 8.179922538017031,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 1108
+        },
+        "backend_counts": {
+          "huggingface": 1108
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 1108
+        }
+      },
+      "volatility": {
+        "record_count": 1108,
+        "num_positive_gate_target": 389,
+        "num_negative_gate_target": 719,
+        "positive_rate": 0.3510830324909747,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9487815884476535,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.10065929036154,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 1108
+        },
+        "backend_counts": {
+          "huggingface": 1108
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 1108
+        }
+      },
+      "shape": {
+        "record_count": 1108,
+        "num_positive_gate_target": 431,
+        "num_negative_gate_target": 677,
+        "positive_rate": 0.38898916967509023,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9690884476534296,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.5794970179794365,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 1108
+        },
+        "backend_counts": {
+          "huggingface": 1108
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 1108
+        }
+      },
+      "temporal_influence": {
+        "record_count": 1108,
+        "num_positive_gate_target": 256,
+        "num_negative_gate_target": 852,
+        "positive_rate": 0.23104693140794225,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9611913357400722,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.37719473744364,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 1108
+        },
+        "backend_counts": {
+          "huggingface": 1108
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 1108
+        }
+      }
+    },
+    "vali": {
+      "distribution_shift": {
+        "record_count": 237,
+        "num_positive_gate_target": 38,
+        "num_negative_gate_target": 199,
+        "positive_rate": 0.16033755274261605,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9968354430379747,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 8.228938203154327,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 237
+        },
+        "backend_counts": {
+          "huggingface": 237
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 237
+        }
+      },
+      "volatility": {
+        "record_count": 237,
+        "num_positive_gate_target": 83,
+        "num_negative_gate_target": 154,
+        "positive_rate": 0.350210970464135,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9472573839662447,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.136325041498132,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 237
+        },
+        "backend_counts": {
+          "huggingface": 237
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 237
+        }
+      },
+      "shape": {
+        "record_count": 237,
+        "num_positive_gate_target": 86,
+        "num_negative_gate_target": 151,
+        "positive_rate": 0.3628691983122363,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9694092827004219,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.619586558534977,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 237
+        },
+        "backend_counts": {
+          "huggingface": 237
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 237
+        }
+      },
+      "temporal_influence": {
+        "record_count": 237,
+        "num_positive_gate_target": 56,
+        "num_negative_gate_target": 181,
+        "positive_rate": 0.23628691983122363,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9862869198312236,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.976757947989318,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 237
+        },
+        "backend_counts": {
+          "huggingface": 237
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 237
+        }
+      }
+    },
+    "test": {
+      "distribution_shift": {
+        "record_count": 239,
+        "num_positive_gate_target": 49,
+        "num_negative_gate_target": 190,
+        "positive_rate": 0.20502092050209206,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.99581589958159,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 8.199374894655053,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 239
+        },
+        "backend_counts": {
+          "huggingface": 239
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 239
+        }
+      },
+      "volatility": {
+        "record_count": 239,
+        "num_positive_gate_target": 78,
+        "num_negative_gate_target": 161,
+        "positive_rate": 0.3263598326359833,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9633891213389121,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.419054748357761,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 239
+        },
+        "backend_counts": {
+          "huggingface": 239
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 239
+        }
+      },
+      "shape": {
+        "record_count": 239,
+        "num_positive_gate_target": 69,
+        "num_negative_gate_target": 170,
+        "positive_rate": 0.28870292887029286,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 0.9989539748953975,
+          "min": 0.75,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9609483960948396,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.439483668625697,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 239
+        },
+        "backend_counts": {
+          "huggingface": 239
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 239
+        }
+      },
+      "temporal_influence": {
+        "record_count": 239,
+        "num_positive_gate_target": 62,
+        "num_negative_gate_target": 177,
+        "positive_rate": 0.2594142259414226,
+        "invalid_pred_count": 0,
+        "missing_gt_count": 0,
+        "parse_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "self_consistency": {
+          "mean": 0.9717573221757322,
+          "min": 0.5,
+          "max": 1.0
+        },
+        "margin": {
+          "mean": 7.662834982236945,
+          "min": 0.0,
+          "max": 8.294299608857235
+        },
+        "prompt_source_counts": {
+          "fallback": 239
+        },
+        "backend_counts": {
+          "huggingface": 239
+        },
+        "model_counts": {
+          "/ssd/hf_home/models/Qwen3-8B": 239
+        }
+      }
+    }
+  },
+  "gt_metadata_contains_all_primitives": true
+}

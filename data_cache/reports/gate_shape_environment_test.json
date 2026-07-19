@@ -1,0 +1,15 @@
+{
+  "dataset": "environment",
+  "split": "test",
+  "primitive": "shape",
+  "num_sampled_records": 239,
+  "num_gate_records": 239,
+  "num_positive_gate_target": 69,
+  "num_negative_gate_target": 170,
+  "positive_rate": 0.28870292887029286,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/environment/shape/test.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/environment/shape/test.json"
+}

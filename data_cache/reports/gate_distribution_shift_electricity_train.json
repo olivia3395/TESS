@@ -1,0 +1,15 @@
+{
+  "dataset": "electricity",
+  "split": "train",
+  "primitive": "distribution_shift",
+  "num_sampled_records": 2955,
+  "num_gate_records": 2955,
+  "num_positive_gate_target": 738,
+  "num_negative_gate_target": 2217,
+  "positive_rate": 0.24974619289340103,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/electricity/distribution_shift/train.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/electricity/train.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/electricity/distribution_shift/train.json"
+}

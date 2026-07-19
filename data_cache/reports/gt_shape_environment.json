@@ -1,0 +1,52 @@
+{
+  "dataset": "environment",
+  "primitive": "shape",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_patch_diff_quantile",
+    "values": {
+      "tau_shape": 10.0,
+      "shape_quantile": 0.33
+    },
+    "fit_split": "train",
+    "score_name": "shape_score"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 1108,
+      "label_counts": {
+        "Rise": 76,
+        "Fall": 67,
+        "Peak": 301,
+        "Recover": 146,
+        "Oscillate": 518
+      }
+    },
+    "vali": {
+      "num_records": 237,
+      "label_counts": {
+        "Rise": 22,
+        "Fall": 12,
+        "Peak": 67,
+        "Recover": 24,
+        "Oscillate": 112
+      }
+    },
+    "test": {
+      "num_records": 239,
+      "label_counts": {
+        "Rise": 22,
+        "Fall": 21,
+        "Peak": 69,
+        "Recover": 37,
+        "Oscillate": 90
+      }
+    }
+  }
+}

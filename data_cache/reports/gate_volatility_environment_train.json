@@ -1,0 +1,15 @@
+{
+  "dataset": "environment",
+  "split": "train",
+  "primitive": "volatility",
+  "num_sampled_records": 1108,
+  "num_gate_records": 1108,
+  "num_positive_gate_target": 389,
+  "num_negative_gate_target": 719,
+  "positive_rate": 0.3510830324909747,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/environment/volatility/train.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/train.json"
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "fnspid",
+  "split": "train",
+  "primitive": "temporal_influence",
+  "num_sampled_records": 6842,
+  "num_gate_records": 6842,
+  "num_positive_gate_target": 2795,
+  "num_negative_gate_target": 4047,
+  "positive_rate": 0.4085062847120725,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/fnspid/temporal_influence/train.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/train.json"
+}

@@ -1,0 +1,296 @@
+{
+  "dataset": "environment",
+  "splits": [
+    "train",
+    "vali",
+    "test"
+  ],
+  "primitives": [
+    "distribution_shift",
+    "volatility",
+    "shape",
+    "temporal_influence"
+  ],
+  "stages": [
+    "gt",
+    "gate",
+    "grouped",
+    "audit"
+  ],
+  "backend": "huggingface",
+  "prompt_source": "auto",
+  "num_samples": 4,
+  "limit": null,
+  "seed": 42,
+  "overwrite": false,
+  "start_time": "2026-06-28T10:59:59.016283+00:00",
+  "end_time": "2026-06-28T10:59:59.783708+00:00",
+  "duration_seconds": 0.7674408129532821,
+  "created_or_updated_paths": [
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_environment.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_environment.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_shape_environment.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_environment.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/shape/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/shape/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/shape/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/train.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_environment.json"
+  ],
+  "stage_statuses": [
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_environment.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_environment.json"
+      ],
+      "detail": {
+        "primitive": "volatility"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_shape_environment.json"
+      ],
+      "detail": {
+        "primitive": "shape"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_environment.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_train.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_vali.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/distribution_shift/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_environment_test.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_train.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_vali.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_environment_test.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/shape/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_train.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/shape/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_vali.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/shape/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_environment_test.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_train.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_vali.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_environment_test.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "grouped_audit",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/train.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/environment/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_environment.json"
+      ]
+    }
+  ],
+  "skipped_stages_or_files": [],
+  "environment_note": {
+    "conda_default_env": "/data/llh_conda_envs/tslib",
+    "python_executable": "/data/llh_conda_envs/tslib/bin/python"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "electricity",
+  "split": "vali",
+  "primitive": "volatility",
+  "num_sampled_records": 700,
+  "num_gate_records": 700,
+  "num_positive_gate_target": 238,
+  "num_negative_gate_target": 462,
+  "positive_rate": 0.34,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/electricity/volatility/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/electricity/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/electricity/volatility/vali.json"
+}

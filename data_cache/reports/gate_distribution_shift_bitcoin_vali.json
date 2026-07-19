@@ -1,0 +1,15 @@
+{
+  "dataset": "bitcoin",
+  "split": "vali",
+  "primitive": "distribution_shift",
+  "num_sampled_records": 12,
+  "num_gate_records": 12,
+  "num_positive_gate_target": 5,
+  "num_negative_gate_target": 7,
+  "positive_rate": 0.4166666666666667,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/bitcoin/distribution_shift/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/bitcoin/distribution_shift/vali.json"
+}

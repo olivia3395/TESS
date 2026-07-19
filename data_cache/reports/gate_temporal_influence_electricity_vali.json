@@ -1,0 +1,15 @@
+{
+  "dataset": "electricity",
+  "split": "vali",
+  "primitive": "temporal_influence",
+  "num_sampled_records": 700,
+  "num_gate_records": 700,
+  "num_positive_gate_target": 70,
+  "num_negative_gate_target": 630,
+  "positive_rate": 0.1,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/electricity/temporal_influence/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/electricity/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/electricity/temporal_influence/vali.json"
+}

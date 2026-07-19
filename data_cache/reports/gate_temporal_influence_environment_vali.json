@@ -1,0 +1,15 @@
+{
+  "dataset": "environment",
+  "split": "vali",
+  "primitive": "temporal_influence",
+  "num_sampled_records": 237,
+  "num_gate_records": 237,
+  "num_positive_gate_target": 56,
+  "num_negative_gate_target": 181,
+  "positive_rate": 0.23628691983122363,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/environment/temporal_influence/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/environment/temporal_influence/vali.json"
+}

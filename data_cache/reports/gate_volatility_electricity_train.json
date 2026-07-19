@@ -1,0 +1,15 @@
+{
+  "dataset": "electricity",
+  "split": "train",
+  "primitive": "volatility",
+  "num_sampled_records": 2955,
+  "num_gate_records": 2955,
+  "num_positive_gate_target": 982,
+  "num_negative_gate_target": 1973,
+  "positive_rate": 0.3323181049069374,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/electricity/volatility/train.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/electricity/train.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/electricity/volatility/train.json"
+}
