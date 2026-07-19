@@ -1,0 +1,50 @@
+{
+  "dataset": "electricity",
+  "schema": "legacy_v1",
+  "thresholds": {
+    "distribution_shift": {
+      "method": "legacy_train_only_abs_delta_mu_quantiles",
+      "values": {
+        "tau_mu_1": 0.13294849864269492,
+        "tau_mu_2": 0.6611528062733263,
+        "quantile_low": 0.25,
+        "quantile_high": 0.75
+      },
+      "fit_split": "train",
+      "score_name": "delta_mu"
+    },
+    "volatility": {
+      "method": "legacy_train_only_r_sigma_quantiles",
+      "values": {
+        "vol_q_low": -0.06330658048391886,
+        "vol_q_high": 0.05692391915623967,
+        "quantile_low": 0.33,
+        "quantile_high": 0.66
+      },
+      "fit_split": "train",
+      "score_name": "r_sigma"
+    },
+    "shape": {
+      "method": "legacy_train_only_patch_diff_quantile",
+      "values": {
+        "tau_shape": 146.02749999999986,
+        "shape_quantile": 0.33
+      },
+      "fit_split": "train",
+      "score_name": "shape_score"
+    },
+    "temporal_influence": {
+      "method": "legacy_fixed_temporal_parameters",
+      "values": {
+        "eta": 0.15,
+        "kappa_1": 0.5,
+        "kappa_2": 0.55,
+        "rho": 0.25,
+        "alpha": 1.0
+      },
+      "fit_split": "train",
+      "score_name": "centroid_tail_peak"
+    }
+  },
+  "notes": "Thresholds are fitted from train split only and applied to train/vali/test."
+}

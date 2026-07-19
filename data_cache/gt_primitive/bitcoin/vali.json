@@ -1,0 +1,614 @@
+[
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 0,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STABLE",
+      "volatility": "High",
+      "shape": "Recover",
+      "temporal_influence": "Immediate"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": -0.0457185465395116
+      },
+      "volatility": {
+        "volatility_score": 0.8475597715503453,
+        "r_sigma": 0.8475597715503453
+      },
+      "shape": {
+        "shape_score": 773.6
+      },
+      "temporal_influence": {
+        "centroid_c": 0.4970138120115506,
+        "tail_mass_d": 0.4938915992828866,
+        "peak_prominence_q": 0.17149593842929214
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 1,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "MILD-RISE",
+      "volatility": "Low",
+      "shape": "Oscillate",
+      "temporal_influence": "Immediate"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 1.3380690589675248
+      },
+      "volatility": {
+        "volatility_score": -1.374172643455612,
+        "r_sigma": -1.374172643455612
+      },
+      "shape": {
+        "shape_score": 130.7
+      },
+      "temporal_influence": {
+        "centroid_c": 0.49995862157961823,
+        "tail_mass_d": 0.6658890150836194,
+        "peak_prominence_q": 0.16771163598138633
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 2,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STRONG-DROP",
+      "volatility": "High",
+      "shape": "Recover",
+      "temporal_influence": "Immediate"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": -4.529340193185104
+      },
+      "volatility": {
+        "volatility_score": 0.7654269981057432,
+        "r_sigma": 0.7654269981057432
+      },
+      "shape": {
+        "shape_score": 377.0
+      },
+      "temporal_influence": {
+        "centroid_c": 0.4729562036996746,
+        "tail_mass_d": 0.45459878182921587,
+        "peak_prominence_q": 0.19885862627150883
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 3,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STRONG-RISE",
+      "volatility": "High",
+      "shape": "Peak",
+      "temporal_influence": "Delayed"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 8.092408538272164
+      },
+      "volatility": {
+        "volatility_score": 0.6670631951746481,
+        "r_sigma": 0.6670631951746481
+      },
+      "shape": {
+        "shape_score": 845.2
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5240226184938362,
+        "tail_mass_d": 0.1745420996916316,
+        "peak_prominence_q": 0.1783580895254392
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 4,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "MILD-RISE",
+      "volatility": "Medium",
+      "shape": "Peak",
+      "temporal_influence": "Delayed"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 1.6354948642204203
+      },
+      "volatility": {
+        "volatility_score": -0.23063607970864253,
+        "r_sigma": -0.23063607970864253
+      },
+      "shape": {
+        "shape_score": 770.6
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5119564957239523,
+        "tail_mass_d": 0.17439394441391812,
+        "peak_prominence_q": 0.1747163999458547
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 5,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "MILD-RISE",
+      "volatility": "High",
+      "shape": "Peak",
+      "temporal_influence": "Delayed"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 3.2379342993960623
+      },
+      "volatility": {
+        "volatility_score": 0.6162422771841751,
+        "r_sigma": 0.6162422771841751
+      },
+      "shape": {
+        "shape_score": 1530.6
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5139113167527248,
+        "tail_mass_d": 0.1726027708361311,
+        "peak_prominence_q": 0.17854073177887345
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 6,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "MILD-RISE",
+      "volatility": "High",
+      "shape": "Peak",
+      "temporal_influence": "Sustained"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 3.3621692156713423
+      },
+      "volatility": {
+        "volatility_score": 0.7712008360416075,
+        "r_sigma": 0.7712008360416075
+      },
+      "shape": {
+        "shape_score": 2583.8
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5025358644117491,
+        "tail_mass_d": 0.3300756737615649,
+        "peak_prominence_q": 0.17400704664945865
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 7,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STABLE",
+      "volatility": "Low",
+      "shape": "Oscillate",
+      "temporal_influence": "Immediate"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": -0.252394484815461
+      },
+      "volatility": {
+        "volatility_score": -0.5181953976986764,
+        "r_sigma": -0.5181953976986764
+      },
+      "shape": {
+        "shape_score": 1385.9
+      },
+      "temporal_influence": {
+        "centroid_c": 0.49855568807336287,
+        "tail_mass_d": 0.8308910217215011,
+        "peak_prominence_q": 0.16910897827849894
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 8,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "MILD-DROP",
+      "volatility": "Low",
+      "shape": "Oscillate",
+      "temporal_influence": "Sustained"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": -2.121317300553767
+      },
+      "volatility": {
+        "volatility_score": -0.36538698937363334,
+        "r_sigma": -0.36538698937363334
+      },
+      "shape": {
+        "shape_score": 1178.3
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5068091103782146,
+        "tail_mass_d": 0.5065688021710927,
+        "peak_prominence_q": 0.17247600422091172
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 9,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STABLE",
+      "volatility": "Medium",
+      "shape": "Oscillate",
+      "temporal_influence": "Immediate"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": -0.3019337292397887
+      },
+      "volatility": {
+        "volatility_score": 0.20723573568260514,
+        "r_sigma": 0.20723573568260514
+      },
+      "shape": {
+        "shape_score": 1049.8
+      },
+      "temporal_influence": {
+        "centroid_c": 0.4943685665996823,
+        "tail_mass_d": 0.8298023604506104,
+        "peak_prominence_q": 0.1701976395493895
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 10,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STRONG-RISE",
+      "volatility": "Medium",
+      "shape": "Oscillate",
+      "temporal_influence": "Delayed"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 3.8174040440628842
+      },
+      "volatility": {
+        "volatility_score": -0.18080393516222132,
+        "r_sigma": -0.18080393516222132
+      },
+      "shape": {
+        "shape_score": 1499.3
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5139139249026682,
+        "tail_mass_d": 0.0,
+        "peak_prominence_q": 0.17770297015867656
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "vali",
+    "sample_id": 11,
+    "schema": "legacy_v1",
+    "gt_labels": {
+      "distribution_shift": "STRONG-RISE",
+      "volatility": "Medium",
+      "shape": "Oscillate",
+      "temporal_influence": "Delayed"
+    },
+    "gt_scores": {
+      "distribution_shift": {
+        "shift_score": 4.783038949182138
+      },
+      "volatility": {
+        "volatility_score": -0.2908551069591719,
+        "r_sigma": -0.2908551069591719
+      },
+      "shape": {
+        "shape_score": 741.4
+      },
+      "temporal_influence": {
+        "centroid_c": 0.5042393273571283,
+        "tail_mass_d": 0.16827552950961921,
+        "peak_prominence_q": 0.170327509334814
+      }
+    },
+    "threshold_ref": {
+      "distribution_shift": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_abs_delta_mu_quantiles"
+      },
+      "volatility": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_r_sigma_quantiles"
+      },
+      "shape": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_train_only_patch_diff_quantile"
+      },
+      "temporal_influence": {
+        "path": "data_cache/gt_primitive/bitcoin/metadata.json",
+        "fit_split": "train",
+        "method": "legacy_fixed_temporal_parameters"
+      }
+    }
+  }
+]
