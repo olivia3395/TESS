@@ -1,7 +1,0 @@
-显示数值分析:
-Please read the following news and analyze the potential impact on stock price over the next five days. 
-Provide specific predictions such as the expected percentage change in stock price, target price levels, and the expected support and resistance levels.
-
-隐式趋势分析
-Please read the following news and analyze the potential impact on stock price over the next five days. 
-provide an overall trend prediction (e.g., rising, declining, or stable), without specifying exact price points.

@@ -1,5 +1,0 @@
-Based on the following news and the historical stock price data [86.31, 91.64, 88.81, 83.95, 80.85](需要替换), analyze the potential impact on Micron Technology’s stock price over the next five days.
-
-Based on the following news, analyze the potential impact on Micron Technology’s stock price over the next five days.
-
-除了这个实验之外都需要给出hist_data 
