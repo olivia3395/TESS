@@ -1,0 +1,52 @@
+{
+  "dataset": "electricity",
+  "primitive": "shape",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_patch_diff_quantile",
+    "values": {
+      "tau_shape": 146.02749999999986,
+      "shape_quantile": 0.33
+    },
+    "fit_split": "train",
+    "score_name": "shape_score"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 2955,
+      "label_counts": {
+        "Rise": 271,
+        "Fall": 33,
+        "Peak": 806,
+        "Recover": 386,
+        "Oscillate": 1459
+      }
+    },
+    "vali": {
+      "num_records": 700,
+      "label_counts": {
+        "Rise": 76,
+        "Fall": 6,
+        "Peak": 131,
+        "Recover": 162,
+        "Oscillate": 325
+      }
+    },
+    "test": {
+      "num_records": 855,
+      "label_counts": {
+        "Rise": 6,
+        "Fall": 2,
+        "Peak": 229,
+        "Recover": 138,
+        "Oscillate": 480
+      }
+    }
+  }
+}

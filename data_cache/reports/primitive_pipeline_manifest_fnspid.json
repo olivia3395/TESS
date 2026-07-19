@@ -1,0 +1,296 @@
+{
+  "dataset": "fnspid",
+  "splits": [
+    "train",
+    "vali",
+    "test"
+  ],
+  "primitives": [
+    "distribution_shift",
+    "volatility",
+    "shape",
+    "temporal_influence"
+  ],
+  "stages": [
+    "gt",
+    "gate",
+    "grouped",
+    "audit"
+  ],
+  "backend": "huggingface",
+  "prompt_source": "auto",
+  "num_samples": 4,
+  "limit": null,
+  "seed": 42,
+  "overwrite": false,
+  "start_time": "2026-06-28T12:38:07.705901+00:00",
+  "end_time": "2026-06-28T12:38:13.223141+00:00",
+  "duration_seconds": 5.517334127041977,
+  "created_or_updated_paths": [
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_fnspid.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_fnspid.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_shape_fnspid.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+    "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_fnspid.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/train.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_train.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/vali.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_test.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/train.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/vali.json",
+    "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/test.json",
+    "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_fnspid.json"
+  ],
+  "stage_statuses": [
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_distribution_shift_fnspid.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_volatility_fnspid.json"
+      ],
+      "detail": {
+        "primitive": "volatility"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_shape_fnspid.json"
+      ],
+      "detail": {
+        "primitive": "shape"
+      }
+    },
+    {
+      "stage": "gt",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/train.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+        "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/metadata.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gt_temporal_influence_fnspid.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_train.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_vali.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/distribution_shift/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_distribution_shift_fnspid_test.json"
+      ],
+      "detail": {
+        "primitive": "distribution_shift",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_train.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_vali.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_volatility_fnspid_test.json"
+      ],
+      "detail": {
+        "primitive": "volatility",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_train.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_vali.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_shape_fnspid_test.json"
+      ],
+      "detail": {
+        "primitive": "shape",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/train.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_train.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "train"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/vali.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_vali.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "vali"
+      }
+    },
+    {
+      "stage": "gate",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate/fnspid/temporal_influence/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/gate_temporal_influence_fnspid_test.json"
+      ],
+      "detail": {
+        "primitive": "temporal_influence",
+        "split": "test"
+      }
+    },
+    {
+      "stage": "grouped_audit",
+      "status": "completed",
+      "paths": [
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/train.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/vali.json",
+        "/home/llh/TESS-RC2/data_cache/gate_grouped/fnspid/test.json",
+        "/home/llh/TESS-RC2/data_cache/reports/primitive_cache_audit_fnspid.json"
+      ]
+    }
+  ],
+  "skipped_stages_or_files": [],
+  "environment_note": {
+    "conda_default_env": "/data/llh_conda_envs/tslib",
+    "python_executable": "/data/llh_conda_envs/tslib/bin/python"
+  }
+}

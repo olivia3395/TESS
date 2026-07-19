@@ -1,0 +1,49 @@
+{
+  "dataset": "bitcoin",
+  "primitive": "temporal_influence",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_fixed_temporal_parameters",
+    "values": {
+      "eta": 0.15,
+      "kappa_1": 0.5,
+      "kappa_2": 0.55,
+      "rho": 0.25,
+      "alpha": 1.0
+    },
+    "fit_split": "train",
+    "score_name": "centroid_tail_peak"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 98,
+      "label_counts": {
+        "Immediate": 32,
+        "Delayed": 49,
+        "Sustained": 17
+      }
+    },
+    "vali": {
+      "num_records": 12,
+      "label_counts": {
+        "Immediate": 5,
+        "Delayed": 5,
+        "Sustained": 2
+      }
+    },
+    "test": {
+      "num_records": 13,
+      "label_counts": {
+        "Immediate": 4,
+        "Delayed": 8,
+        "Sustained": 1
+      }
+    }
+  }
+}

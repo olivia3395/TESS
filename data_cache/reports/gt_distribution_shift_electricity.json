@@ -1,0 +1,54 @@
+{
+  "dataset": "electricity",
+  "primitive": "distribution_shift",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_abs_delta_mu_quantiles",
+    "values": {
+      "tau_mu_1": 0.13294849864269492,
+      "tau_mu_2": 0.6611528062733263,
+      "quantile_low": 0.25,
+      "quantile_high": 0.75
+    },
+    "fit_split": "train",
+    "score_name": "delta_mu"
+  },
+  "cache_update_mode_by_split": {
+    "train": "created_new",
+    "vali": "created_new",
+    "test": "created_new"
+  },
+  "splits": {
+    "train": {
+      "num_records": 2955,
+      "label_counts": {
+        "STRONG-RISE": 372,
+        "MILD-RISE": 732,
+        "STABLE": 739,
+        "MILD-DROP": 745,
+        "STRONG-DROP": 367
+      }
+    },
+    "vali": {
+      "num_records": 700,
+      "label_counts": {
+        "STRONG-RISE": 80,
+        "MILD-RISE": 180,
+        "STABLE": 148,
+        "MILD-DROP": 198,
+        "STRONG-DROP": 94
+      }
+    },
+    "test": {
+      "num_records": 855,
+      "label_counts": {
+        "STRONG-RISE": 62,
+        "MILD-RISE": 219,
+        "STABLE": 263,
+        "MILD-DROP": 254,
+        "STRONG-DROP": 57
+      }
+    }
+  }
+}

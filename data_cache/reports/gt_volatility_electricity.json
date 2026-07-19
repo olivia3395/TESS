@@ -1,0 +1,48 @@
+{
+  "dataset": "electricity",
+  "primitive": "volatility",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_r_sigma_quantiles",
+    "values": {
+      "vol_q_low": -0.06330658048391886,
+      "vol_q_high": 0.05692391915623967,
+      "quantile_low": 0.33,
+      "quantile_high": 0.66
+    },
+    "fit_split": "train",
+    "score_name": "r_sigma"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 2955,
+      "label_counts": {
+        "High": 1005,
+        "Medium": 975,
+        "Low": 975
+      }
+    },
+    "vali": {
+      "num_records": 700,
+      "label_counts": {
+        "High": 228,
+        "Medium": 232,
+        "Low": 240
+      }
+    },
+    "test": {
+      "num_records": 855,
+      "label_counts": {
+        "High": 283,
+        "Medium": 289,
+        "Low": 283
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "dataset": "bitcoin",
+  "primitive": "volatility",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_r_sigma_quantiles",
+    "values": {
+      "vol_q_low": -0.3292926368724484,
+      "vol_q_high": 0.2627768857995236,
+      "quantile_low": 0.33,
+      "quantile_high": 0.66
+    },
+    "fit_split": "train",
+    "score_name": "r_sigma"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 98,
+      "label_counts": {
+        "High": 33,
+        "Medium": 32,
+        "Low": 33
+      }
+    },
+    "vali": {
+      "num_records": 12,
+      "label_counts": {
+        "High": 5,
+        "Medium": 4,
+        "Low": 3
+      }
+    },
+    "test": {
+      "num_records": 13,
+      "label_counts": {
+        "High": 6,
+        "Medium": 2,
+        "Low": 5
+      }
+    }
+  }
+}

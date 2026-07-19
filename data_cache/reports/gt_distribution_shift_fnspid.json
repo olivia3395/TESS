@@ -1,0 +1,54 @@
+{
+  "dataset": "fnspid",
+  "primitive": "distribution_shift",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_abs_delta_mu_quantiles",
+    "values": {
+      "tau_mu_1": 0.8081293159023036,
+      "tau_mu_2": 2.926622274449154,
+      "quantile_low": 0.25,
+      "quantile_high": 0.75
+    },
+    "fit_split": "train",
+    "score_name": "delta_mu"
+  },
+  "cache_update_mode_by_split": {
+    "train": "created_new",
+    "vali": "created_new",
+    "test": "created_new"
+  },
+  "splits": {
+    "train": {
+      "num_records": 6842,
+      "label_counts": {
+        "STRONG-RISE": 886,
+        "MILD-RISE": 1719,
+        "STABLE": 1711,
+        "MILD-DROP": 1701,
+        "STRONG-DROP": 825
+      }
+    },
+    "vali": {
+      "num_records": 1424,
+      "label_counts": {
+        "STRONG-RISE": 201,
+        "MILD-RISE": 380,
+        "STABLE": 394,
+        "MILD-DROP": 324,
+        "STRONG-DROP": 125
+      }
+    },
+    "test": {
+      "num_records": 1567,
+      "label_counts": {
+        "STRONG-RISE": 266,
+        "MILD-RISE": 418,
+        "STABLE": 364,
+        "MILD-DROP": 346,
+        "STRONG-DROP": 173
+      }
+    }
+  }
+}

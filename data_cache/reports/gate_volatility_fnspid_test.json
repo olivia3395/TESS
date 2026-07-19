@@ -1,0 +1,15 @@
+{
+  "dataset": "fnspid",
+  "split": "test",
+  "primitive": "volatility",
+  "num_sampled_records": 1567,
+  "num_gate_records": 1567,
+  "num_positive_gate_target": 588,
+  "num_negative_gate_target": 979,
+  "positive_rate": 0.3752393107849394,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/fnspid/volatility/test.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/fnspid/volatility/test.json"
+}

@@ -1,0 +1,48 @@
+{
+  "dataset": "environment",
+  "primitive": "volatility",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_r_sigma_quantiles",
+    "values": {
+      "vol_q_low": -0.2652880766118156,
+      "vol_q_high": 0.24914443987648485,
+      "quantile_low": 0.33,
+      "quantile_high": 0.66
+    },
+    "fit_split": "train",
+    "score_name": "r_sigma"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 1108,
+      "label_counts": {
+        "High": 377,
+        "Medium": 365,
+        "Low": 366
+      }
+    },
+    "vali": {
+      "num_records": 237,
+      "label_counts": {
+        "High": 83,
+        "Medium": 69,
+        "Low": 85
+      }
+    },
+    "test": {
+      "num_records": 239,
+      "label_counts": {
+        "High": 77,
+        "Medium": 90,
+        "Low": 72
+      }
+    }
+  }
+}
