@@ -1,0 +1,1614 @@
+[
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 0,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "STRONG-RISE",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "High",
+        "gate_target": 1,
+        "label_id": 0,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Peak",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Sustained",
+        "gt_label": "Delayed",
+        "gate_target": 0,
+        "label_id": 2,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.0002498126405196103,
+          "Sustained": 0.9995003747189608
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 1,
+      "shape": 0,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 2
+    },
+    "gt_label_ids": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 2,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 1,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-DROP",
+        "gt_label": "MILD-DROP",
+        "gate_target": 1,
+        "label_id": 3,
+        "gt_label_id": 3,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.00024968789013732833,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.9990012484394508,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Medium",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Oscillate",
+        "gate_target": 1,
+        "label_id": 4,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 1,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 3,
+      "volatility": 1,
+      "shape": 4,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 2,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "STABLE",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Low",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Recover",
+        "gate_target": 0,
+        "label_id": 4,
+        "gt_label_id": 3,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 2,
+      "volatility": 2,
+      "shape": 3,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 3,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "STRONG-RISE",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "High",
+        "gate_target": 1,
+        "label_id": 0,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Peak",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 0.0,
+        "self_consistency": 0.5,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.49987509367974015,
+          "Sustained": 0.49987509367974015
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 1,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 2,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 4,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-DROP",
+        "gt_label": "STABLE",
+        "gate_target": 0,
+        "label_id": 3,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.00024968789013732833,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.9990012484394508,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Low",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 0.0,
+        "self_consistency": 0.5,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.49987509367974015,
+          "Medium": 0.49987509367974015,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Oscillate",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Immediate",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 2,
+      "volatility": 2,
+      "shape": 4,
+      "temporal_influence": 0
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 5,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-DROP",
+        "gt_label": "MILD-DROP",
+        "gate_target": 1,
+        "label_id": 3,
+        "gt_label_id": 3,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.00024968789013732833,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.9990012484394508,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "High",
+        "gate_target": 1,
+        "label_id": 0,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Recover",
+        "gate_target": 0,
+        "label_id": 4,
+        "gt_label_id": 3,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Immediate",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 1,
+      "shape": 0,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 3,
+      "temporal_influence": 0
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 6,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "MILD-RISE",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Low",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Oscillate",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Sustained",
+        "gt_label": "Immediate",
+        "gate_target": 0,
+        "label_id": 2,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.0002498126405196103,
+          "Sustained": 0.9995003747189608
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 2
+    },
+    "gt_label_ids": {
+      "distribution_shift": 1,
+      "volatility": 2,
+      "shape": 4,
+      "temporal_influence": 0
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 7,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "STABLE",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "Medium",
+        "gt_label": "High",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.0002498126405196103,
+          "Medium": 0.9995003747189608,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Oscillate",
+        "gate_target": 1,
+        "label_id": 4,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Sustained",
+        "gt_label": "Delayed",
+        "gate_target": 0,
+        "label_id": 2,
+        "gt_label_id": 1,
+        "margin": 1.0979460661251466,
+        "self_consistency": 0.75,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.25006245316012987,
+          "Sustained": 0.7496877341993504
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 1,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 1,
+      "shape": 4,
+      "temporal_influence": 2
+    },
+    "gt_label_ids": {
+      "distribution_shift": 2,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 8,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "MILD-RISE",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "Medium",
+        "gt_label": "High",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.0002498126405196103,
+          "Medium": 0.9995003747189608,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Oscillate",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Immediate",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 0,
+        "margin": 1.0979460661251466,
+        "self_consistency": 0.75,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.7496877341993504,
+          "Sustained": 0.25006245316012987
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 1,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 0
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 9,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-DROP",
+        "gt_label": "MILD-DROP",
+        "gate_target": 1,
+        "label_id": 3,
+        "gt_label_id": 3,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.00024968789013732833,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.9990012484394508,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Medium",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Fall",
+        "gt_label": "Oscillate",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.9990012484394508,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 1,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 3,
+      "volatility": 1,
+      "shape": 4,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 10,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "MILD-RISE",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Low",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 1.0979460661251466,
+        "self_consistency": 0.75,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.7496877341993504,
+          "Medium": 0.25006245316012987,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Rise",
+        "gt_label": "Oscillate",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.9990012484394508,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 0.0,
+        "self_consistency": 0.5,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.49987509367974015,
+          "Sustained": 0.49987509367974015
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 0,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 1,
+      "volatility": 2,
+      "shape": 4,
+      "temporal_influence": 1
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 11,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-RISE",
+        "gt_label": "STABLE",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.9990012484394508,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.00024968789013732833,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "Low",
+        "gate_target": 0,
+        "label_id": 0,
+        "gt_label_id": 2,
+        "margin": 0.0,
+        "self_consistency": 0.5,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.49987509367974015,
+          "Medium": 0.49987509367974015,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Oscillate",
+        "gate_target": 1,
+        "label_id": 4,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Sustained",
+        "gate_target": 0,
+        "label_id": 1,
+        "gt_label_id": 2,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 0,
+      "shape": 1,
+      "temporal_influence": 0
+    },
+    "label_ids": {
+      "distribution_shift": 1,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 2,
+      "volatility": 2,
+      "shape": 4,
+      "temporal_influence": 2
+    }
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 12,
+    "schema": "legacy_v1",
+    "primitive_order": [
+      "distribution_shift",
+      "volatility",
+      "shape",
+      "temporal_influence"
+    ],
+    "primitives": {
+      "distribution_shift": {
+        "pred_label": "MILD-DROP",
+        "gt_label": "STRONG-DROP",
+        "gate_target": 0,
+        "label_id": 3,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "STRONG-RISE": 0.00024968789013732833,
+          "MILD-RISE": 0.00024968789013732833,
+          "STABLE": 0.00024968789013732833,
+          "MILD-DROP": 0.9990012484394508,
+          "STRONG-DROP": 0.00024968789013732833
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "volatility": {
+        "pred_label": "High",
+        "gt_label": "High",
+        "gate_target": 1,
+        "label_id": 0,
+        "gt_label_id": 0,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "High": 0.9995003747189608,
+          "Medium": 0.0002498126405196103,
+          "Low": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "shape": {
+        "pred_label": "Oscillate",
+        "gt_label": "Oscillate",
+        "gate_target": 1,
+        "label_id": 4,
+        "gt_label_id": 4,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Rise": 0.00024968789013732833,
+          "Fall": 0.00024968789013732833,
+          "Peak": 0.00024968789013732833,
+          "Recover": 0.00024968789013732833,
+          "Oscillate": 0.9990012484394508
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      },
+      "temporal_influence": {
+        "pred_label": "Delayed",
+        "gt_label": "Delayed",
+        "gate_target": 1,
+        "label_id": 1,
+        "gt_label_id": 1,
+        "margin": 8.294299608857235,
+        "self_consistency": 1.0,
+        "parse_rate": 1.0,
+        "valid_count": 4,
+        "num_samples": 4,
+        "sample_probs": {
+          "Immediate": 0.0002498126405196103,
+          "Delayed": 0.9995003747189608,
+          "Sustained": 0.0002498126405196103
+        },
+        "margin_type": "sampled_self_consistency_margin",
+        "backend": "huggingface",
+        "prompt_source": "fallback",
+        "prompt_template_path": null,
+        "model": "/ssd/hf_home/models/Qwen3-8B"
+      }
+    },
+    "gate_targets": {
+      "distribution_shift": 0,
+      "volatility": 1,
+      "shape": 1,
+      "temporal_influence": 1
+    },
+    "label_ids": {
+      "distribution_shift": 3,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    },
+    "gt_label_ids": {
+      "distribution_shift": 4,
+      "volatility": 0,
+      "shape": 4,
+      "temporal_influence": 1
+    }
+  }
+]
