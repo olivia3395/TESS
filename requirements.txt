@@ -1,0 +1,7 @@
+# TESS core dependencies
+# Install: pip install -r requirements.txt
+# PyTorch: install separately matching your CUDA version (https://pytorch.org/get-started/locally/)
+
+torch>=2.0.0
+numpy>=1.24.0
+openai>=1.0.0

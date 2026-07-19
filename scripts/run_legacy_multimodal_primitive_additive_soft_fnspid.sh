@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="${ROOT:-/home/lyc/workspace/TESS-RC2}"
+DEVICE="${DEVICE:-cuda}"
+EPOCHS="${EPOCHS:-25}"
+BATCH_SIZE="${BATCH_SIZE:-32}"
+LR="${LR:-0.0005}"
+SEED="${SEED:-42}"
+SCALE="${SCALE:-legacy_standard}"
+OUT_ROOT="${OUT_ROOT:-$ROOT/outputs/tess_basic/real_fnspid_legacy_standard}"
+OUT_DIR="${OUT_DIR:-$OUT_ROOT/additive_text_soft_scale1}"
+
+python -m experiments.train_tess_basic \
+  --root "$ROOT" \
+  --dataset fnspid \
+  --model legacy_multimodal_primitive_additive_soft \
+  --primitive-source text \
+  --epochs "$EPOCHS" \
+  --batch-size "$BATCH_SIZE" \
+  --lr "$LR" \
+  --device "$DEVICE" \
+  --scale "$SCALE" \
+  --seed "$SEED" \
+  --text-delta-scale 1.0 \
+  --output-dir "$OUT_DIR" \
+  --overwrite
