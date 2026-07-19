@@ -1,0 +1,15 @@
+{
+  "dataset": "fnspid",
+  "split": "vali",
+  "primitive": "shape",
+  "num_sampled_records": 1424,
+  "num_gate_records": 1424,
+  "num_positive_gate_target": 415,
+  "num_negative_gate_target": 1009,
+  "positive_rate": 0.2914325842696629,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/fnspid/shape/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/vali.json"
+}

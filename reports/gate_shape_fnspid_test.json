@@ -1,0 +1,15 @@
+{
+  "dataset": "fnspid",
+  "split": "test",
+  "primitive": "shape",
+  "num_sampled_records": 1567,
+  "num_gate_records": 1567,
+  "num_positive_gate_target": 439,
+  "num_negative_gate_target": 1128,
+  "positive_rate": 0.2801531589023612,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/fnspid/shape/test.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/fnspid/test.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/fnspid/shape/test.json"
+}

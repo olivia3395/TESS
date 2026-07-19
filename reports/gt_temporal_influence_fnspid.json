@@ -1,0 +1,49 @@
+{
+  "dataset": "fnspid",
+  "primitive": "temporal_influence",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_fixed_temporal_parameters",
+    "values": {
+      "eta": 0.15,
+      "kappa_1": 0.5,
+      "kappa_2": 0.55,
+      "rho": 0.25,
+      "alpha": 1.0
+    },
+    "fit_split": "train",
+    "score_name": "centroid_tail_peak"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 6842,
+      "label_counts": {
+        "Immediate": 2014,
+        "Delayed": 3552,
+        "Sustained": 1276
+      }
+    },
+    "vali": {
+      "num_records": 1424,
+      "label_counts": {
+        "Immediate": 446,
+        "Delayed": 626,
+        "Sustained": 352
+      }
+    },
+    "test": {
+      "num_records": 1567,
+      "label_counts": {
+        "Immediate": 464,
+        "Delayed": 797,
+        "Sustained": 306
+      }
+    }
+  }
+}

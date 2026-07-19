@@ -1,0 +1,49 @@
+{
+  "dataset": "electricity",
+  "primitive": "temporal_influence",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_fixed_temporal_parameters",
+    "values": {
+      "eta": 0.15,
+      "kappa_1": 0.5,
+      "kappa_2": 0.55,
+      "rho": 0.25,
+      "alpha": 1.0
+    },
+    "fit_split": "train",
+    "score_name": "centroid_tail_peak"
+  },
+  "cache_update_mode_by_split": {
+    "train": "updated_existing",
+    "vali": "updated_existing",
+    "test": "updated_existing"
+  },
+  "splits": {
+    "train": {
+      "num_records": 2955,
+      "label_counts": {
+        "Immediate": 1565,
+        "Delayed": 1046,
+        "Sustained": 344
+      }
+    },
+    "vali": {
+      "num_records": 700,
+      "label_counts": {
+        "Immediate": 332,
+        "Delayed": 298,
+        "Sustained": 70
+      }
+    },
+    "test": {
+      "num_records": 855,
+      "label_counts": {
+        "Immediate": 310,
+        "Delayed": 406,
+        "Sustained": 139
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "bitcoin",
+  "split": "vali",
+  "primitive": "volatility",
+  "num_sampled_records": 12,
+  "num_gate_records": 12,
+  "num_positive_gate_target": 3,
+  "num_negative_gate_target": 9,
+  "positive_rate": 0.25,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/bitcoin/volatility/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/bitcoin/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/bitcoin/volatility/vali.json"
+}

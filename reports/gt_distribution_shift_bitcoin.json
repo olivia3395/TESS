@@ -1,0 +1,54 @@
+{
+  "dataset": "bitcoin",
+  "primitive": "distribution_shift",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_abs_delta_mu_quantiles",
+    "values": {
+      "tau_mu_1": 0.9707548371949688,
+      "tau_mu_2": 3.410496309378247,
+      "quantile_low": 0.25,
+      "quantile_high": 0.75
+    },
+    "fit_split": "train",
+    "score_name": "delta_mu"
+  },
+  "cache_update_mode_by_split": {
+    "train": "created_new",
+    "vali": "created_new",
+    "test": "created_new"
+  },
+  "splits": {
+    "train": {
+      "num_records": 98,
+      "label_counts": {
+        "STRONG-RISE": 18,
+        "MILD-RISE": 28,
+        "STABLE": 25,
+        "MILD-DROP": 20,
+        "STRONG-DROP": 7
+      }
+    },
+    "vali": {
+      "num_records": 12,
+      "label_counts": {
+        "STRONG-RISE": 3,
+        "MILD-RISE": 4,
+        "STABLE": 3,
+        "MILD-DROP": 1,
+        "STRONG-DROP": 1
+      }
+    },
+    "test": {
+      "num_records": 13,
+      "label_counts": {
+        "STRONG-RISE": 2,
+        "MILD-RISE": 3,
+        "STABLE": 4,
+        "MILD-DROP": 3,
+        "STRONG-DROP": 1
+      }
+    }
+  }
+}

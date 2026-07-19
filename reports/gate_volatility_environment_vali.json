@@ -1,0 +1,15 @@
+{
+  "dataset": "environment",
+  "split": "vali",
+  "primitive": "volatility",
+  "num_sampled_records": 237,
+  "num_gate_records": 237,
+  "num_positive_gate_target": 83,
+  "num_negative_gate_target": 154,
+  "positive_rate": 0.350210970464135,
+  "missing_gt_count": 0,
+  "invalid_pred_count": 0,
+  "input_sampled_path": "/home/llh/TESS-RC2/data_cache/sampled_inference/environment/volatility/vali.json",
+  "input_gt_path": "/home/llh/TESS-RC2/data_cache/gt_primitive/environment/vali.json",
+  "output_gate_path": "/home/llh/TESS-RC2/data_cache/gate/environment/volatility/vali.json"
+}

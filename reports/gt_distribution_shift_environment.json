@@ -1,0 +1,54 @@
+{
+  "dataset": "environment",
+  "primitive": "distribution_shift",
+  "schema": "legacy_v1",
+  "threshold_source": "train",
+  "thresholds": {
+    "method": "legacy_train_only_abs_delta_mu_quantiles",
+    "values": {
+      "tau_mu_1": 0.2607778887273879,
+      "tau_mu_2": 1.0314763959155278,
+      "quantile_low": 0.25,
+      "quantile_high": 0.75
+    },
+    "fit_split": "train",
+    "score_name": "delta_mu"
+  },
+  "cache_update_mode_by_split": {
+    "train": "created_new",
+    "vali": "created_new",
+    "test": "created_new"
+  },
+  "splits": {
+    "train": {
+      "num_records": 1108,
+      "label_counts": {
+        "STRONG-RISE": 201,
+        "MILD-RISE": 220,
+        "STABLE": 277,
+        "MILD-DROP": 334,
+        "STRONG-DROP": 76
+      }
+    },
+    "vali": {
+      "num_records": 237,
+      "label_counts": {
+        "STRONG-RISE": 50,
+        "MILD-RISE": 53,
+        "STABLE": 39,
+        "MILD-DROP": 67,
+        "STRONG-DROP": 28
+      }
+    },
+    "test": {
+      "num_records": 239,
+      "label_counts": {
+        "STRONG-RISE": 44,
+        "MILD-RISE": 54,
+        "STABLE": 49,
+        "MILD-DROP": 66,
+        "STRONG-DROP": 26
+      }
+    }
+  }
+}
