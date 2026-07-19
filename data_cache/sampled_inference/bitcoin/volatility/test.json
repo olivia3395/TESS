@@ -1,0 +1,379 @@
+[
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 0,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has shown upward momentum in the past week, and key news events suggest continued bullish influences. Tesla’s $1.5 billion Bitcoin investment and plans to accept it as payment reinforced institutional adoption, historically driving demand and price appreciation. Reports of declining Bitcoin liquid supply (78% held long-term) further tightened market liquidity, amplifying scarcity-driven upward pressure. However, Deutsche Bank’s bubble warning introduced caution, though its short-term dampening effect was outweighed by broader adoption trends. Environmental concerns over Bitcoin’s energy use posed a risk, but their impact was mitigated by dominant bullish narratives. In summary, corporate adoption and supply scarcity likely sustained upward price momentum, while sporadic warnings and environmental critiques introduced minor friction without reversing the trend. The last seven days' bitcoin price is 46682.0,45766.0,46240.0,47590.0,47268.0,48570.0,47853.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 1,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has shown significant volatility over the past week, influenced by key news events. Tesla's $1.5 billion Bitcoin investment and acceptance of Bitcoin as payment signaled institutional confidence, historically driving short-term demand and upward price momentum. However, China's crackdown on Bitcoin mining introduced uncertainty regarding network stability and supply dynamics, which often triggers selling pressure and increased volatility. Additionally, MicroStrategy's $1 billion convertible note issuance to buy Bitcoin reinforced institutional interest, but concerns over Bitcoin's energy consumption and environmental impact may have tempered bullish sentiment, as such criticisms historically weigh on market confidence. The combination of institutional adoption and regulatory scrutiny likely contributed to mixed price movements, with positive catalysts offset by negative pressures. In summary, these factors—Tesla's endorsement, China's mining crackdown, and environmental concerns—collectively shaped Bitcoin's price trajectory, balancing bullish demand with regulatory and sustainability risks. The last seven days' bitcoin price is 48845.0,50897.0,51901.0,53058.0,56272.0,57022.0,54729.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 2,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin fluctuated over the past week, influenced by several key news events. Tesla's $1.5 billion Bitcoin investment and adoption as a payment method reinforced institutional confidence, historically driving short-term price surges due to increased demand and mainstream validation. Conversely, India's proposed bill to ban private cryptocurrencies introduced regulatory uncertainty, which often triggers panic selling and dampens market sentiment, exerting downward pressure. Additionally, Square's $170 million Bitcoin purchase further bolstered the narrative of Bitcoin as a corporate treasury asset, supporting upward momentum by reducing circulating supply and attracting institutional inflows. These opposing forces—positive adoption signals from major corporations and negative regulatory risks—created mixed short-term price dynamics, with corporate adoption likely offsetting some of the bearish pressure from regulatory fears. Overall, the interplay of institutional adoption and regulatory uncertainty shaped Bitcoin's price trajectory, with bullish corporate moves counterbalancing regulatory headwinds. The last seven days' bitcoin price is 48981.0,49790.0,49992.0,46648.0,47126.0,44822.0,47582.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 3,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has shown volatility over the past week, with movements influenced by key news events. Tesla's $1.5 billion Bitcoin investment and its announcement to accept Bitcoin as payment for cars bolstered market confidence, driving institutional and retail demand, which historically correlates with upward price momentum. Additionally, Coinbase’s Nasdaq listing filing underscored the cryptocurrency sector’s maturation, enhancing investor trust and encouraging broader participation, further supporting price appreciation. Miners shifting from selling to hoarding BTC reduced market supply, creating scarcity-driven upward pressure, a pattern often linked to bullish sentiment. These factors—institutional adoption, market validation, and supply constraints—collectively reinforced positive price trends. However, lingering environmental concerns over Bitcoin’s energy usage could introduce regulatory uncertainty, potentially tempering gains. In summary, the combination of strong institutional demand, reduced sell-side pressure, and heightened market legitimacy likely contributed to a favorable price environment, while sustainability concerns remained a counterbalancing risk. The last seven days' bitcoin price is 48631.0,50406.0,49417.0,47709.0,48591.0,50194.0,50778.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 4,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has risen significantly over the past week, driven by key institutional and mainstream adoption events. Tesla’s $1.5 billion Bitcoin investment validated its role as a corporate treasury asset, historically increasing demand and upward price pressure. PayPal’s integration of cryptocurrency transactions expanded accessibility, boosting short-term buying interest. Additionally, institutional backing from BNY Mellon, BlackRock, and Mastercard reinforced Bitcoin’s legitimacy, historically attracting further investment and stabilizing prices. However, the market also saw heightened volatility, likely due to profit-taking after rapid gains, as large corporate investments often trigger short-term speculative swings. The combination of institutional adoption and mainstream accessibility has historically supported bullish momentum, while periodic corrections reflect natural market cycles after strong rallies. Overall, these factors suggest continued institutional-driven demand with intermittent volatility in the near term. The last seven days' bitcoin price is 53969.0,55356.0,56264.0,56840.0,58772.0,60475.0,57111.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 2,
+      "Medium": 2,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.49987509367974015,
+      "Medium": 0.49987509367974015,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 0.0,
+    "self_consistency": 0.5,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 5,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin fluctuated over the past week, influenced by several key news events. India’s proposed cryptocurrency ban and crackdown on mining created market-wide uncertainty, historically triggering panic selling and short-term price declines due to reduced liquidity and weakened investor confidence. Meanwhile, environmental concerns over Bitcoin’s energy consumption, particularly in coal-dependent regions like Xinjiang, raised fears of stricter regulations or ESG-driven divestment, which could destabilize mining operations and deter institutional adoption, adding downward pressure. On the bullish side, Tesla’s $1.5 billion Bitcoin investment and Morgan Stanley offering Bitcoin access to wealthy clients signaled institutional confidence, historically driving demand and upward price momentum. However, the combination of regulatory risks and environmental scrutiny likely outweighed institutional support, contributing to mixed price action. To sum up, regulatory uncertainty and environmental concerns could suppress prices, while institutional adoption may provide some stability, leading to a volatile but net-negative impact in the near term. The last seven days' bitcoin price is 55340.0,56137.0,58477.0,58278.0,58776.0,57303.0,56801.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 6,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has shown volatility over the past week, influenced by several key news events. Tesla’s decision to accept Bitcoin payments and retain its holdings reinforced Bitcoin’s utility as both a transactional currency and a store of value, historically driving upward price momentum due to increased institutional confidence. Visa and Mastercard’s integration of cryptocurrencies into their payment networks further enhanced Bitcoin’s mainstream adoption, typically supporting price appreciation by improving accessibility and legitimacy. Meanwhile, China’s ban on Bitcoin mining in Inner Mongolia introduced short-term uncertainty, as such regulatory actions have historically led to temporary network congestion and higher transaction fees, though the long-term effect often shifts mining to more sustainable regions, mitigating negative impacts. Additionally, Grayscale and Fidelity’s push for Bitcoin ETFs signaled growing institutional demand, which has historically correlated with sustained price growth as markets anticipate broader investment accessibility. To summarize, the combination of corporate adoption, payment network integration, and institutional financial product developments likely contributed to positive price trends, while regulatory adjustments in mining may have introduced minor short-term pressures. The last seven days' bitcoin price is 54699.0,55143.0,52127.0,53208.0,55175.0,55835.0,56910.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 7,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin showed moderate fluctuations over the past week, influenced by several key news events. The SEC’s review of VanEck’s Bitcoin ETF proposal, combined with Gary Gensler’s nomination as SEC Chair, historically increased market optimism about institutional adoption, creating upward price pressure. However, concerns over Bitcoin’s environmental impact and mining energy use introduced bearish sentiment, as such debates often lead to regulatory scrutiny and short-term selling pressure. Meanwhile, Morgan Stanley and Goldman Sachs offering Bitcoin exposure to wealthy clients signaled growing institutional legitimacy, which typically supports demand and stabilizes prices. Visa, PayPal, and Nuvei’s integration of crypto payments further reinforced Bitcoin’s utility, fostering broader acceptance and long-term demand. To sum up, the interplay of regulatory progress, institutional adoption, and environmental concerns likely contributed to mixed but overall cautiously positive price movements, with institutional developments counterbalancing short-term bearish risks. The last seven days' bitcoin price is 58349.0,58700.0,58868.0,59266.0,58933.0,57705.0,58085.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "Medium",
+    "sample_counts": {
+      "High": 0,
+      "Medium": 4,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.0002498126405196103,
+      "Medium": 0.9995003747189608,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 8,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin rose steadily over the past week, supported by institutional adoption signals such as Grayscale’s Bitcoin Trust ETF conversion plans and PayPal’s expansion of Bitcoin services, which historically increased demand by improving accessibility and legitimacy. However, environmental concerns over Bitcoin mining in China introduced regulatory uncertainty, a factor often associated with short-term price volatility due to fears of supply disruptions. Additionally, institutional moves like SkyBridge Capital’s Bitcoin ETF application and Morgan Stanley’s Bitcoin access offerings typically attract capital inflows, reinforcing upward momentum, while MicroStrategy’s continued Bitcoin purchases reduced market supply, further supporting prices. Despite these bullish drivers, the persistence of mining-related regulatory risks likely tempered gains, as negative sentiment around sustainability scrutiny has historically led to intermittent sell-offs. In summary, while institutional adoption and reduced liquidity provided upward pressure, lingering regulatory concerns could introduce volatility, potentially offsetting some of the positive momentum in the coming week. The last seven days' bitcoin price is 58460.0,56977.0,57176.0,58209.0,59866.0,59794.0,60108.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "Medium",
+    "sample_counts": {
+      "High": 0,
+      "Medium": 4,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.0002498126405196103,
+      "Medium": 0.9995003747189608,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 9,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin exhibited volatility over the past week, influenced by several key news events. Institutional adoption surged as major financial institutions like Goldman Sachs and corporations such as Tesla embraced Bitcoin, historically driving long-term demand and price appreciation by legitimizing the asset. However, regulatory risks highlighted by Treasury Secretary Janet Yellen calling for stricter cryptocurrency regulations likely dampened investor sentiment, creating short-term volatility and downward pressure. Additionally, the SEC’s charges against Ripple for unregistered securities offerings introduced broader market uncertainty, which often triggers selling pressure across the crypto sector. While corporate acceptance of Bitcoin as payment, such as Tesla’s move, bolstered utility and mainstream legitimacy, the immediate impact of regulatory scrutiny and market-wide uncertainty overshadowed these positive developments. In summary, the combination of regulatory headwinds and sector-wide uncertainty likely exerted downward pressure on Bitcoin prices, offsetting the bullish momentum from institutional adoption. The last seven days' bitcoin price is 62149.0,63438.0,62899.0,61731.0,61305.0,56083.0,56387.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 10,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin experienced volatility over the past week, influenced by key news events. Tesla’s adoption of Bitcoin for its corporate treasury reinforced institutional confidence, historically driving short-term demand and supporting price appreciation. Venmo’s integration of cryptocurrency purchases expanded retail accessibility, likely sustaining demand growth and positive price momentum. However, the SEC’s lawsuit against Ripple introduced regulatory uncertainty, temporarily dampening broader market sentiment and increasing short-term volatility, though Bitcoin’s classification as a commodity mitigated long-term impacts. Additionally, the SEC’s clarification of Bitcoin as a non-security reduced regulatory uncertainty, fostering institutional adoption and market stability. China’s dominance in Bitcoin mining raised concerns about centralization, potentially introducing volatility, while criticism of Bitcoin’s energy usage amplified environmental concerns, which could weigh on sentiment if unaddressed. In summary, institutional adoption (Tesla, Venmo) and regulatory clarity (SEC) provided bullish support, while mining centralization risks and environmental criticism posed bearish pressures, creating a mixed but generally upward-trending impact on Bitcoin’s price trajectory. The last seven days' bitcoin price is 55518.0,55452.0,53812.0,49891.0,50077.0,49657.0,53000.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 3,
+      "Medium": 1,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.7496877341993504,
+      "Medium": 0.25006245316012987,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 1.0979460661251466,
+    "self_consistency": 0.75,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 11,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin has shown volatility over the past week, influenced by several key news events. Tesla’s acceptance of Bitcoin for U.S. purchases bolstered confidence in Bitcoin’s utility as a currency, likely contributing to upward price momentum by reinforcing adoption prospects. However, the global GPU shortage, which threatens mining efficiency, introduced short-term uncertainty, potentially tempering gains as concerns over network security emerged. Meanwhile, the OCC’s approval for banks to custody cryptocurrencies further legitimized Bitcoin as an institutional asset, likely supporting demand and price stability. These factors—corporate adoption, mining supply-chain disruptions, and regulatory progress—collectively created a mixed but generally positive environment for Bitcoin’s price trajectory, with institutional and utility-driven demand outweighing transient mining-related concerns. The last seven days' bitcoin price is 54583.0,54785.0,53891.0,55260.0,57787.0,56860.0,57912.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 2,
+      "Medium": 2,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.49987509367974015,
+      "Medium": 0.49987509367974015,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 0.0,
+    "self_consistency": 0.5,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  },
+  {
+    "dataset": "bitcoin",
+    "split": "test",
+    "sample_id": 12,
+    "primitive": "volatility",
+    "schema": "legacy_v1",
+    "raw_news": "The price of Bitcoin showed volatility over the past week, influenced by several key news events. New York’s proposed mining moratorium and environmental lawsuits introduced regulatory uncertainty, historically increasing selling pressure as concerns over mining restrictions and operational costs weighed on market sentiment. Meanwhile, Tesla’s acceptance of Bitcoin as payment and institutional expansions by major banks like JPMorgan provided short-term bullish momentum, reinforcing Bitcoin’s legitimacy and driving demand. However, the launch of CME’s Micro Bitcoin Futures, while enhancing liquidity, coincided with mixed reactions, as retail participation sometimes amplifies volatility during periods of broader market instability. Environmental scrutiny, including comparisons of Bitcoin’s energy consumption to entire nations, further dampened investor confidence, aligning with historical patterns where negative environmental narratives contributed to downward price pressure. In summary, the interplay of regulatory risks, institutional adoption, and environmental criticism likely exacerbated bearish sentiment, creating headwinds for Bitcoin’s price trajectory. The last seven days' bitcoin price is 55308.0,55872.0,56974.0,56818.0,58527.0,57981.0,57763.0. Please predict the next seven days bitcoin price.",
+    "pred_label": "High",
+    "sample_counts": {
+      "High": 4,
+      "Medium": 0,
+      "Low": 0
+    },
+    "sample_probs": {
+      "High": 0.9995003747189608,
+      "Medium": 0.0002498126405196103,
+      "Low": 0.0002498126405196103
+    },
+    "margin": 8.294299608857235,
+    "self_consistency": 1.0,
+    "parse_rate": 1.0,
+    "valid_count": 4,
+    "num_samples": 4,
+    "margin_type": "sampled_self_consistency_margin",
+    "backend": "huggingface",
+    "prompt_source": "fallback",
+    "prompt_template_path": null,
+    "model": "/ssd/hf_home/models/Qwen3-8B"
+  }
+]
